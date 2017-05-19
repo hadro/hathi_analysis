@@ -60,7 +60,7 @@ This chart describes the usage curve for the top 10,000 items in HathiTrust from
 May 2014 - May 2017.
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hadro/11.embed"></iframe>
-![Usage curve](images/usage.png)
+<!-- ![Usage curve](images/usage.png) -->
 
 
 (For full-screen interactive version of this chart, see [Line Chart](usage_log.html) (or the
@@ -73,7 +73,7 @@ May 2014 - May 2017.
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hadro/12.embed"></iframe>
 
-![Histogram](images/histogram.png)
+<!-- ![Histogram](images/histogram.png) -->
 
 Note: the embedded histogram on this page only includes the top 40,000 data points
 because the free version of plotly has a 40K data point limit; for a full-screen
