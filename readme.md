@@ -61,6 +61,8 @@ almost certainly not among the most-viewed items)
 
 ## Publication Date analysis
 
+**See [full chart](histogram.html) for better view**
+
 This chart describes the frequency of publication year for the top 500,000 requested items in HathiTrust from
 May 2014 - May 2017.
 
@@ -85,6 +87,8 @@ Notes:
 
 
 ## Usage analysis
+
+**See [full chart](usage_log.html) for better view**
 
 This chart describes the usage curve for the top 10,000 items in HathiTrust from
 May 2014 - May 2017.
