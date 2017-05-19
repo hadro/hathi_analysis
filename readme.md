@@ -52,7 +52,6 @@ Most viewed NYPL title:
 
 |Title |  Uses | Publication Date|
 |------|-------|-----------------|
-
 |Miranda / | 48465 views | 1915|
 |Wife no. 19, or the story of a life in bondage : being a complete exposé of Mormonism, and revealing the sorrows, sacrifices and sufferings of women in polygamy / | 36158 views | 1875|
 |Men of West Virginia ... | 30308 views | 1903|
