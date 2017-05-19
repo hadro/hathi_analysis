@@ -6,24 +6,6 @@ usage.
 
 The data below covers the period May 8, 2014 - May 7, 2017.
 
-## Tools and method
-
-My steps and the tools I used were very roughly as follows:
-- Scraped 3 years of daily complete Google Analytics urls, using Corey Harper's
-  very helpful [PygAnalytics tool](https://github.com/chrpr/pyganalytics)
-- Downloaded the complete [HathiFiles](https://www.hathitrust.org/hathifiles)
-  for May 2017, which includes basic bibliographic and rights metadata for every
-      volume in HathiTrust
-- Various slicing, dicing, matching, joining, and other manipulations using the
-  elegant and invaluable [Pandas Python Data Analysis
-  Library](http://pandas.pydata.org/)
-    - Egregious amounts of Regular Expressions, via Pandas
-- Ingest of ~15 million rows of HathiFiles into Postgres database, using
-  incredibly handy Pandas `.to_sql()` method
-- Data visualization using the [Plotly Python Library](https://plot.ly/python/)
-  (including the very handy ability to [run Plotly in 'offline
-  mode'](https://www.reddit.com/r/IPython/comments/3tibc8/tip_on_how_to_run_plotly_examples_in_offline_mode/),
-  so you don't have to constantly upload each iteration of a revised chart).
 
 
 ## Headline numbers
@@ -89,11 +71,16 @@ May 2014 - May 2017.
 This chart describes the frequency of publication year for the top 500,000 requested items in HathiTrust from
 May 2014 - May 2017.
 
-![Histogram](image/histogram.png)
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hadro/12.embed"></iframe>
 
-(For full-screen interactive version of this chart, see the full [Histogram](histogram.html).
+![Histogram](images/histogram.png)
 
-N.B. You can toggle the data series on this charts, for example if you want to
+Note: the embedded histogram on this page only includes the top 40,000 data points
+because the free version of plotly has a 40K data point limit; for a full-screen
+interactive version of this chart with 500,000 data points, see the **full
+[Histogram](histogram.html)**.
+
+Meanwhile, you can toggle the data series on this chart, for example if you want to
 view just the items among the top 500K that were requested but could not be
 viewed because they are "limited view" items (i.e. closed for copyright reasons).
 
@@ -102,4 +89,25 @@ Notes:
   within the 1600-2020 publication date range
     - 7770 of those have publication dates of "9999", which almost always means
       they are part of an ongoing publication or serial
-    
+
+
+
+## Tools and method
+
+My steps and the tools I used were very roughly as follows:
+- Scraped 3 years of daily complete Google Analytics urls, using Corey Harper's
+  very helpful [PygAnalytics tool](https://github.com/chrpr/pyganalytics)
+- Downloaded the complete [HathiFiles](https://www.hathitrust.org/hathifiles)
+  for May 2017, which includes basic bibliographic and rights metadata for every
+      volume in HathiTrust
+- Various slicing, dicing, matching, joining, and other manipulations using the
+  elegant and invaluable [Pandas Python Data Analysis
+  Library](http://pandas.pydata.org/)
+    - Egregious amounts of Regular Expressions, via the Pandas `.extract()` and
+      `.extractall()` methods
+- Ingest of ~15 million rows of HathiFiles into Postgres database, using
+  incredibly handy Pandas `.to_sql()` method
+- Data visualization using the [Plotly Python Library](https://plot.ly/python/)
+  (including the very handy ability to [run Plotly in 'offline
+  mode'](https://www.reddit.com/r/IPython/comments/3tibc8/tip_on_how_to_run_plotly_examples_in_offline_mode/),
+  so you don't have to constantly upload each iteration of a revised chart).
