@@ -15,7 +15,7 @@ small subset of records which are not included here)
 
 **3,247,601** distinct HathiTrust volume IDs consulted over three years
 
-Most viewed title:
+### Most viewed titles
 
 | Title |  Uses | Publication Date|
 |-------|-------|-----------------|
@@ -30,7 +30,7 @@ Most viewed title:
 
 See [top_open_items.txt](txt/top_open_items.txt) for the full list
 
-Most viewed NYPL title: 
+### Most viewed NYPL titles 
 
 |Title |  Uses | Publication Date|
 |------|-------|-----------------|
@@ -42,7 +42,7 @@ Most viewed NYPL title:
 
 See [NYPL_top_open_items.txt](txt/NYPL_top_open_items.txt) for the full list
 
-Closed ("Limited View") title with most attempted views: 
+### Closed ("Limited View") title with most attempted views
 
 |Title |  Attempted Uses | Publication Date|
 |------|-----------------|-----------------|
