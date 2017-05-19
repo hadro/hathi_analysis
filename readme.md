@@ -28,7 +28,7 @@ small subset of records which are not included here)
 |Roster of the Confederate soldiers of Georgia, 1861-1865 / | 285162 views | 9999|
 
 
-See [top_open_items.txt](txt/top_open_items.txt) for the full list
+**See [top_open_items.txt](txt/top_open_items.txt) for the full list**
 
 ### Most viewed NYPL titles 
 
@@ -40,7 +40,7 @@ See [top_open_items.txt](txt/top_open_items.txt) for the full list
 |Illustrated trade catalogue and price list : manufacturers, importers and jobbers of watchmakers', jewelers' and engravers' supplies of every description : optical goods, chains, charms, etc. : originators of the box matetial [sic] and makers of Swartchild's celebrated watchmakers' benches : 1897-1898 / | 28594 views | 1897|
 |A standard history of Stark County, Ohio : an authentic narrative of the past, with particular attention to the modern era in the commercial, industrial, civic and social development : a chronicle of the people, with family lineage and memoirs / | 26722 views | 1916|
 
-See [NYPL_top_open_items.txt](txt/NYPL_top_open_items.txt) for the full list
+**See [NYPL_top_open_items.txt](txt/NYPL_top_open_items.txt) for the full list**
 
 ### Closed ("Limited View") title with most attempted views
 
@@ -52,7 +52,7 @@ See [NYPL_top_open_items.txt](txt/NYPL_top_open_items.txt) for the full list
 |Catalogue of Alexandrian coins, | 9132 views | 1933|
 |The regimental history of the 3rd Queen Alexandra's own Gurkha rifles from April 1815 to December 1927, | 9088 views | 1929|
 
-See [top_closed_items.txt](txt/top_closed_items.txt) for the full list
+**See [top_closed_items.txt](txt/top_closed_items.txt) for the full list**
 
 ## Usage analysis
 
@@ -60,8 +60,6 @@ This chart describes the usage curve for the top 10,000 items in HathiTrust from
 May 2014 - May 2017.
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hadro/11.embed"></iframe>
-<!-- ![Usage curve](images/usage.png) -->
-
 
 (For full-screen interactive version of this chart, see [Line Chart](usage_log.html) (or the
 [linear scale](usage.html) version as well).
@@ -72,8 +70,6 @@ This chart describes the frequency of publication year for the top 500,000 reque
 May 2014 - May 2017.
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hadro/12.embed"></iframe>
-
-<!-- ![Histogram](images/histogram.png) -->
 
 Note: the embedded histogram on this page only includes the top 40,000 data points
 because the free version of plotly has a 40K data point limit; for a full-screen
