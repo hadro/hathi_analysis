@@ -10,12 +10,16 @@ The data below covers the period May 8, 2014 - May 7, 2017.
 
 ## Headline numbers
 
-**15,095,384** retrievable records from the Hathifiles (Pandas choked on a very, very
-small subset of records which are not included here)
+**15,095,384** retrievable records from the Hathifiles 
+(Pandas choked on a small subset of records which are not included here, and are
+almost certainly not among the most-viewed items)
 
-**3,247,601** distinct HathiTrust volume IDs consulted over three years
+**3,247,601** distinct HathiTrust volume IDs
+(that I was able to scrape out of three years of analytics data)
 
 ### Most viewed titles
+
+**See [top_open_items.txt](txt/top_open_items.txt) for the full list**
 
 | Title |  Uses | Publication Date|
 |-------|-------|-----------------|
@@ -28,9 +32,10 @@ small subset of records which are not included here)
 |Roster of the Confederate soldiers of Georgia, 1861-1865 / | 285162 views | 9999|
 
 
-**See [top_open_items.txt](txt/top_open_items.txt) for the full list**
 
 ### Most viewed NYPL titles 
+
+**See [NYPL_top_open_items.txt](txt/NYPL_top_open_items.txt) for the full list**
 
 |Title |  Uses | Publication Date|
 |------|-------|-----------------|
@@ -40,9 +45,10 @@ small subset of records which are not included here)
 |Illustrated trade catalogue and price list : manufacturers, importers and jobbers of watchmakers', jewelers' and engravers' supplies of every description : optical goods, chains, charms, etc. : originators of the box matetial [sic] and makers of Swartchild's celebrated watchmakers' benches : 1897-1898 / | 28594 views | 1897|
 |A standard history of Stark County, Ohio : an authentic narrative of the past, with particular attention to the modern era in the commercial, industrial, civic and social development : a chronicle of the people, with family lineage and memoirs / | 26722 views | 1916|
 
-**See [NYPL_top_open_items.txt](txt/NYPL_top_open_items.txt) for the full list**
 
-### Closed ("Limited View") title with most attempted views
+### Closed ("Limited View") titles with most attempted views
+
+**See [top_closed_items.txt](txt/top_closed_items.txt) for the full list**
 
 |Title |  Attempted Uses | Publication Date|
 |------|-----------------|-----------------|
@@ -52,17 +58,6 @@ small subset of records which are not included here)
 |Catalogue of Alexandrian coins, | 9132 views | 1933|
 |The regimental history of the 3rd Queen Alexandra's own Gurkha rifles from April 1815 to December 1927, | 9088 views | 1929|
 
-**See [top_closed_items.txt](txt/top_closed_items.txt) for the full list**
-
-## Usage analysis
-
-This chart describes the usage curve for the top 10,000 items in HathiTrust from
-May 2014 - May 2017.
-
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hadro/11.embed"></iframe>
-
-(For full-screen interactive version of this chart, see [Line Chart](usage_log.html) (or the
-[linear scale](usage.html) version as well).
 
 ## Publication Date analysis
 
@@ -81,12 +76,23 @@ view just the items among the top 500K that were requested but could not be
 viewed because they are "limited view" items (i.e. closed for copyright reasons).
 
 Notes: 
-- There are TKTK items not displayed on this chart, because they did not fall
-  within the 1600-2020 publication date range
-    - 7770 of those have publication dates of "9999", which almost always means
-      they are part of an ongoing publication or serial
+- There are 18,455 volumes not displayed on the [complete chart](histogram.html),
+  because they did not fall within the 1600-2020 publication date range
+    - 10,349 volumes with a publication date either before 1600 or after 2020
+        - 7,770 of those have publication dates of "9999", which almost always
+          means they are part of an ongoing publication or serial 
+    - 8,106 volumes with no valid publication date value in the HathiFiles
 
 
+## Usage analysis
+
+This chart describes the usage curve for the top 10,000 items in HathiTrust from
+May 2014 - May 2017.
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~hadro/11.embed"></iframe>
+
+(For full-screen interactive version of this chart, see [Line Chart](usage_log.html) (or the
+[linear scale](usage.html) version as well).
 
 ## Tools and method
 
