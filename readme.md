@@ -2,8 +2,18 @@
 
 As part of some work to expand the [SimplyE
 project](http://www.librarysimplified.org/) to include more materials
-useful to the research community, I've done some basic analysis of HathiTrust
+useful to the research community, I've done some basic analysis of
+[HathiTrust](https://www.hathitrust.org/about)
 usage.
+
+HathiTrust describes itself as: 
+
+    a partnership of major research institutions and libraries working to ensure that the cultural record is preserved and accessible long into the future. The mission of HathiTrust is to contribute to research, scholarship, and the common good by collaboratively collecting, organizing, preserving, communicating, and sharing the record of human knowledge. There are more than 120 partners in HathiTrust, and membership is open to institutions worldwide.
+
+It contains more than 15 million volumes, including 5.8 million open volumes in the
+public domain. NYPL, through its Google Library Project partnership, has
+contributed more than 300,000 volumes to HathiTrust. For more info see the
+[HathiTrust about page](https://www.hathitrust.org/about).
 
 The data below covers the period May 8, 2014 - May 7, 2017.
 
