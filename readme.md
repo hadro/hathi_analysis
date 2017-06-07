@@ -17,7 +17,7 @@ contributed more than 300,000 volumes to HathiTrust. For more info see the
 
 The data below covers the period May 8, 2014 - May 7, 2017.
 
-
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~hadro/15.embed"></iframe>
 
 ## Headline numbers
 
