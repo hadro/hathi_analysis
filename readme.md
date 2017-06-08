@@ -18,15 +18,20 @@ contributed more than 300,000 volumes to HathiTrust. For more info see the
 The data below covers the period May 8, 2014 - May 7, 2017.
 ## Usage
 
+### All Items
+
 This graph displays all volumes, open volumes accessed, and closed volumes with
 attempted access by year. (See [full graph for larger view](https://hadro.github.io/hathi_analysis/percentage_years.html).)
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~hadro/15.embed"></iframe>
 
-This graph displays all volumes, all open volumes, and all open volumes accessed
-year. (See [full graph for larger view](https://hadro.github.io/hathi_analysis/access.html).)
+## Open items
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~hadro/17.embed"></iframe>
+This graph displays all open volumes and all open volumes accessed by year
+(toggle "Total volumes" in the legend to see all HathiTrust volumes for a given
+year as well). (See [full graph for larger view](https://hadro.github.io/hathi_analysis/access.html).)
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~hadro/19.embed"></iframe>
 
 ## Headline numbers
 
