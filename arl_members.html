@@ -1,0 +1,3169 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_2f139da0894947649f8813e2ad9a7877 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2f139da0894947649f8813e2ad9a7877" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_2f139da0894947649f8813e2ad9a7877 = L.map(
+                                  'map_2f139da0894947649f8813e2ad9a7877',
+                                  {center: [0,0],
+                                  zoom: 1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_1f2ef530250e4bbb98e664e93d0292f0 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false,
+                    subdomains: 'abc'
+                    }
+                ).addTo(map_2f139da0894947649f8813e2ad9a7877);
+
+        
+    
+
+            var circle_fb89b7e426d74a069b06ef625b843367 = L.circle(
+                [33.207199,-87.5482025],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_e020cd07465849c3a5fe835a648078d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_a3090d916a27403b8d09c16011927df2 = $('<div id="html_a3090d916a27403b8d09c16011927df2" style="width: 100.0%; height: 100.0%;">University of Alabama Libraries</div>')[0];
+                popup_e020cd07465849c3a5fe835a648078d4.setContent(html_a3090d916a27403b8d09c16011927df2);
+            
+
+            circle_fb89b7e426d74a069b06ef625b843367.bindPopup(popup_e020cd07465849c3a5fe835a648078d4);
+
+            
+        
+    
+
+            var circle_003847a3a05c43b49b53bc4e1bce9444 = L.circle(
+                [38.5474428,-121.7765309],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_750414479ff244948c2286bfbc7ffa32 = L.popup({maxWidth: '300'});
+
+            
+                var html_8c5505d22676404cb554b49a809dbb25 = $('<div id="html_8c5505d22676404cb554b49a809dbb25" style="width: 100.0%; height: 100.0%;">University of California, Davis Library</div>')[0];
+                popup_750414479ff244948c2286bfbc7ffa32.setContent(html_8c5505d22676404cb554b49a809dbb25);
+            
+
+            circle_003847a3a05c43b49b53bc4e1bce9444.bindPopup(popup_750414479ff244948c2286bfbc7ffa32);
+
+            
+        
+    
+
+            var circle_637fa8ec225a420aa8a37fbad23a643d = L.circle(
+                [33.684587,-117.83188],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_f6016184d4da4c559cd9703ffd3e9de9 = L.popup({maxWidth: '300'});
+
+            
+                var html_5b93c8e911414dfba3dad8e76fa8f23f = $('<div id="html_5b93c8e911414dfba3dad8e76fa8f23f" style="width: 100.0%; height: 100.0%;">University of California, Irvine Libraries</div>')[0];
+                popup_f6016184d4da4c559cd9703ffd3e9de9.setContent(html_5b93c8e911414dfba3dad8e76fa8f23f);
+            
+
+            circle_637fa8ec225a420aa8a37fbad23a643d.bindPopup(popup_f6016184d4da4c559cd9703ffd3e9de9);
+
+            
+        
+    
+
+            var circle_017e0706895e4e1b874cb7e26ac950e8 = L.circle(
+                [34.070264,-118.4440562],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_e70cc9639fdf4e168eb29e0337451d36 = L.popup({maxWidth: '300'});
+
+            
+                var html_76dd0e04a40c4fa0bb3810d8f3edc0d1 = $('<div id="html_76dd0e04a40c4fa0bb3810d8f3edc0d1" style="width: 100.0%; height: 100.0%;">University of California, Los Angeles Library</div>')[0];
+                popup_e70cc9639fdf4e168eb29e0337451d36.setContent(html_76dd0e04a40c4fa0bb3810d8f3edc0d1);
+            
+
+            circle_017e0706895e4e1b874cb7e26ac950e8.bindPopup(popup_e70cc9639fdf4e168eb29e0337451d36);
+
+            
+        
+    
+
+            var circle_59352df98e5a4649b79806820af1a320 = L.circle(
+                [33.9724007,-117.3484317],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_51ef278f94a44ef3b857eebe15c04cb7 = L.popup({maxWidth: '300'});
+
+            
+                var html_dad2aba17cd0428ba9c9ed94a26618d7 = $('<div id="html_dad2aba17cd0428ba9c9ed94a26618d7" style="width: 100.0%; height: 100.0%;">University of California, Riverside Libraries</div>')[0];
+                popup_51ef278f94a44ef3b857eebe15c04cb7.setContent(html_dad2aba17cd0428ba9c9ed94a26618d7);
+            
+
+            circle_59352df98e5a4649b79806820af1a320.bindPopup(popup_51ef278f94a44ef3b857eebe15c04cb7);
+
+            
+        
+    
+
+            var circle_4a79237543b143be8417b896e04f2b55 = L.circle(
+                [32.8843552,-117.2338066],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b887dded357d4f82927e53b1cfa05cdd = L.popup({maxWidth: '300'});
+
+            
+                var html_679be6d5a92b4d83851298b51a3299fd = $('<div id="html_679be6d5a92b4d83851298b51a3299fd" style="width: 100.0%; height: 100.0%;">University of California, San Diego Libraries</div>')[0];
+                popup_b887dded357d4f82927e53b1cfa05cdd.setContent(html_679be6d5a92b4d83851298b51a3299fd);
+            
+
+            circle_4a79237543b143be8417b896e04f2b55.bindPopup(popup_b887dded357d4f82927e53b1cfa05cdd);
+
+            
+        
+    
+
+            var circle_13bc63e917df411e85f8e721f1353fdf = L.circle(
+                [34.4135868,-119.8496976],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_7b26f7ed65f44c28a745d22915da8be2 = L.popup({maxWidth: '300'});
+
+            
+                var html_dec428237b814e1c830973dc97b1f5aa = $('<div id="html_dec428237b814e1c830973dc97b1f5aa" style="width: 100.0%; height: 100.0%;">University of California, Santa Barbara Libraries</div>')[0];
+                popup_7b26f7ed65f44c28a745d22915da8be2.setContent(html_dec428237b814e1c830973dc97b1f5aa);
+            
+
+            circle_13bc63e917df411e85f8e721f1353fdf.bindPopup(popup_7b26f7ed65f44c28a745d22915da8be2);
+
+            
+        
+    
+
+            var circle_0e9d773e11324fe1a5e3183127f8d12c = L.circle(
+                [39.1331454,-84.509213],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_66019dcdf900416380998b45ac84f160 = L.popup({maxWidth: '300'});
+
+            
+                var html_e31241dc42434fff8db26b8547945e37 = $('<div id="html_e31241dc42434fff8db26b8547945e37" style="width: 100.0%; height: 100.0%;">University of Cincinnati Libraries</div>')[0];
+                popup_66019dcdf900416380998b45ac84f160.setContent(html_e31241dc42434fff8db26b8547945e37);
+            
+
+            circle_0e9d773e11324fe1a5e3183127f8d12c.bindPopup(popup_66019dcdf900416380998b45ac84f160);
+
+            
+        
+    
+
+            var circle_b7106446bc7144dfba866a258b04b0f0 = L.circle(
+                [40.0103247,-105.2889726],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_e291530577f54df89d253af3a73f3ea6 = L.popup({maxWidth: '300'});
+
+            
+                var html_1fb888babd6846e88d0fbe7c869258b8 = $('<div id="html_1fb888babd6846e88d0fbe7c869258b8" style="width: 100.0%; height: 100.0%;">University of Colorado at Boulder Libraries</div>')[0];
+                popup_e291530577f54df89d253af3a73f3ea6.setContent(html_1fb888babd6846e88d0fbe7c869258b8);
+            
+
+            circle_b7106446bc7144dfba866a258b04b0f0.bindPopup(popup_e291530577f54df89d253af3a73f3ea6);
+
+            
+        
+    
+
+            var circle_5f0497a1ee02419ea1c6962d194ca2b4 = L.circle(
+                [40.5702905,-105.0901625],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_fcd85e60ecf94958bbb17d64c071d0c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_bf69c0353fef49618a52ed965e2c7b82 = $('<div id="html_bf69c0353fef49618a52ed965e2c7b82" style="width: 100.0%; height: 100.0%;">Colorado State University Libraries</div>')[0];
+                popup_fcd85e60ecf94958bbb17d64c071d0c9.setContent(html_bf69c0353fef49618a52ed965e2c7b82);
+            
+
+            circle_5f0497a1ee02419ea1c6962d194ca2b4.bindPopup(popup_fcd85e60ecf94958bbb17d64c071d0c9);
+
+            
+        
+    
+
+            var circle_fd8058de41c545699993b095b3b7929f = L.circle(
+                [41.8193203,-72.2511833],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_3a6aa8c3a6c34de99612a8f95c164a14 = L.popup({maxWidth: '300'});
+
+            
+                var html_a7a6d96da401475abeddc6c9b27d231f = $('<div id="html_a7a6d96da401475abeddc6c9b27d231f" style="width: 100.0%; height: 100.0%;">University of Connecticut Libraries</div>')[0];
+                popup_3a6aa8c3a6c34de99612a8f95c164a14.setContent(html_a7a6d96da401475abeddc6c9b27d231f);
+            
+
+            circle_fd8058de41c545699993b095b3b7929f.bindPopup(popup_3a6aa8c3a6c34de99612a8f95c164a14);
+
+            
+        
+    
+
+            var circle_9bdf88c28f4c4dfba2277ea062fa2bb7 = L.circle(
+                [39.6911984,-75.7589524],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b621c87cf8634748be700d3bbdb85bd8 = L.popup({maxWidth: '300'});
+
+            
+                var html_6d3a9ba8506549d8a589c15c01ebe301 = $('<div id="html_6d3a9ba8506549d8a589c15c01ebe301" style="width: 100.0%; height: 100.0%;">University of Delaware Library</div>')[0];
+                popup_b621c87cf8634748be700d3bbdb85bd8.setContent(html_6d3a9ba8506549d8a589c15c01ebe301);
+            
+
+            circle_9bdf88c28f4c4dfba2277ea062fa2bb7.bindPopup(popup_b621c87cf8634748be700d3bbdb85bd8);
+
+            
+        
+    
+
+            var circle_c77c3316f1d04620959d8367a125e7f9 = L.circle(
+                [29.6130239,-82.371937],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_9fe938dc6c36427886e9bbd166dd9c1a = L.popup({maxWidth: '300'});
+
+            
+                var html_ca9c7a2b9e1d44618c316f1b3da4fbd5 = $('<div id="html_ca9c7a2b9e1d44618c316f1b3da4fbd5" style="width: 100.0%; height: 100.0%;">University of Florida Libraries</div>')[0];
+                popup_9fe938dc6c36427886e9bbd166dd9c1a.setContent(html_ca9c7a2b9e1d44618c316f1b3da4fbd5);
+            
+
+            circle_c77c3316f1d04620959d8367a125e7f9.bindPopup(popup_9fe938dc6c36427886e9bbd166dd9c1a);
+
+            
+        
+    
+
+            var circle_660040c158fe411ea5a8db366d5fa16b = L.circle(
+                [30.4407853,-84.2883519],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_3ffa4deb042f46b584ae24284e407ea2 = L.popup({maxWidth: '300'});
+
+            
+                var html_dcffc8f773034222a156cee4a9b4f081 = $('<div id="html_dcffc8f773034222a156cee4a9b4f081" style="width: 100.0%; height: 100.0%;">Florida State University Libraries</div>')[0];
+                popup_3ffa4deb042f46b584ae24284e407ea2.setContent(html_dcffc8f773034222a156cee4a9b4f081);
+            
+
+            circle_660040c158fe411ea5a8db366d5fa16b.bindPopup(popup_3ffa4deb042f46b584ae24284e407ea2);
+
+            
+        
+    
+
+            var circle_01007d199ab94b12acc954058913f1a9 = L.circle(
+                [33.954258,-83.3749322],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_d2058b7c5e214ae0812c66a30cd9c1b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_c586b2bc80da450b9cbc932f577a90b9 = $('<div id="html_c586b2bc80da450b9cbc932f577a90b9" style="width: 100.0%; height: 100.0%;">University of Georgia Libraries</div>')[0];
+                popup_d2058b7c5e214ae0812c66a30cd9c1b4.setContent(html_c586b2bc80da450b9cbc932f577a90b9);
+            
+
+            circle_01007d199ab94b12acc954058913f1a9.bindPopup(popup_d2058b7c5e214ae0812c66a30cd9c1b4);
+
+            
+        
+    
+
+            var circle_129d4ac7ea8149139901c2561ac2cc86 = L.circle(
+                [33.7700012,-84.3811458],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_3a684246db3b4742b3a48937bd3b3a4c = L.popup({maxWidth: '300'});
+
+            
+                var html_b569190531054cac80bfe9df711e8cf7 = $('<div id="html_b569190531054cac80bfe9df711e8cf7" style="width: 100.0%; height: 100.0%;">Georgia Institute of Technology Library</div>')[0];
+                popup_3a684246db3b4742b3a48937bd3b3a4c.setContent(html_b569190531054cac80bfe9df711e8cf7);
+            
+
+            circle_129d4ac7ea8149139901c2561ac2cc86.bindPopup(popup_3a684246db3b4742b3a48937bd3b3a4c);
+
+            
+        
+    
+
+            var circle_72102320a1c844a08e34bb8ae40943fe = L.circle(
+                [32.2332841,-110.9488008],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_2768b5d95cec49fb91d52c0190e3f166 = L.popup({maxWidth: '300'});
+
+            
+                var html_34fd5edb846246bfa1d9355dbf622b41 = $('<div id="html_34fd5edb846246bfa1d9355dbf622b41" style="width: 100.0%; height: 100.0%;">University of Arizona Libraries</div>')[0];
+                popup_2768b5d95cec49fb91d52c0190e3f166.setContent(html_34fd5edb846246bfa1d9355dbf622b41);
+            
+
+            circle_72102320a1c844a08e34bb8ae40943fe.bindPopup(popup_2768b5d95cec49fb91d52c0190e3f166);
+
+            
+        
+    
+
+            var circle_24d4d824ea9a44e5b009969b5c5e1b9b = L.circle(
+                [21.3175493,-157.8152491],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_05cd7d3e64b64035b5a052ff65fdf04d = L.popup({maxWidth: '300'});
+
+            
+                var html_59b0f0da38ca4649bdc6d44075aef0a0 = $('<div id="html_59b0f0da38ca4649bdc6d44075aef0a0" style="width: 100.0%; height: 100.0%;">University of Hawai&#39;i at Manoa Libraries</div>')[0];
+                popup_05cd7d3e64b64035b5a052ff65fdf04d.setContent(html_59b0f0da38ca4649bdc6d44075aef0a0);
+            
+
+            circle_24d4d824ea9a44e5b009969b5c5e1b9b.bindPopup(popup_05cd7d3e64b64035b5a052ff65fdf04d);
+
+            
+        
+    
+
+            var circle_d2a847d9d38c4a7c976a71d8c8583c47 = L.circle(
+                [29.7260266,-95.3481641],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_099fff346b7743f4a38e21a984521af7 = L.popup({maxWidth: '300'});
+
+            
+                var html_606c89e909fe4ec3b57dd422ca71bee0 = $('<div id="html_606c89e909fe4ec3b57dd422ca71bee0" style="width: 100.0%; height: 100.0%;">University of Houston Libraries</div>')[0];
+                popup_099fff346b7743f4a38e21a984521af7.setContent(html_606c89e909fe4ec3b57dd422ca71bee0);
+            
+
+            circle_d2a847d9d38c4a7c976a71d8c8583c47.bindPopup(popup_099fff346b7743f4a38e21a984521af7);
+
+            
+        
+    
+
+            var circle_d4fab98b328543b596a7ef611d325109 = L.circle(
+                [41.8733696,-87.650714],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b85189b7ccc440789232270dfd6c76db = L.popup({maxWidth: '300'});
+
+            
+                var html_e98f618369904ec0b0a79efd4e2b1f7d = $('<div id="html_e98f618369904ec0b0a79efd4e2b1f7d" style="width: 100.0%; height: 100.0%;">University of Illinois at Chicago Library</div>')[0];
+                popup_b85189b7ccc440789232270dfd6c76db.setContent(html_e98f618369904ec0b0a79efd4e2b1f7d);
+            
+
+            circle_d4fab98b328543b596a7ef611d325109.bindPopup(popup_b85189b7ccc440789232270dfd6c76db);
+
+            
+        
+    
+
+            var circle_8af316f917274e108cf70272605bab97 = L.circle(
+                [40.1059233,-88.2120315],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_8a18cf6c9bca49049a7e6c0479a44a4c = L.popup({maxWidth: '300'});
+
+            
+                var html_779649ad81ad4c00a9a38466ea271202 = $('<div id="html_779649ad81ad4c00a9a38466ea271202" style="width: 100.0%; height: 100.0%;">University of Illinois at Urbana-Champaign Library</div>')[0];
+                popup_8a18cf6c9bca49049a7e6c0479a44a4c.setContent(html_779649ad81ad4c00a9a38466ea271202);
+            
+
+            circle_8af316f917274e108cf70272605bab97.bindPopup(popup_8a18cf6c9bca49049a7e6c0479a44a4c);
+
+            
+        
+    
+
+            var circle_358fda9cd0b146a18eed4fb2ff5686e0 = L.circle(
+                [39.1714266,-86.5186022],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_2eb2f5a4c3ce489f8745533d1cffa141 = L.popup({maxWidth: '300'});
+
+            
+                var html_09c1a4c5f9264117a1efb5e11db4cae2 = $('<div id="html_09c1a4c5f9264117a1efb5e11db4cae2" style="width: 100.0%; height: 100.0%;">Indiana University Libraries Bloomington</div>')[0];
+                popup_2eb2f5a4c3ce489f8745533d1cffa141.setContent(html_09c1a4c5f9264117a1efb5e11db4cae2);
+            
+
+            circle_358fda9cd0b146a18eed4fb2ff5686e0.bindPopup(popup_2eb2f5a4c3ce489f8745533d1cffa141);
+
+            
+        
+    
+
+            var circle_29fcc9a3886e47b1bac6b9d4aef8eeec = L.circle(
+                [41.659363,-91.5487099],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_7d894a85ac4a4b32bbd5a7941b80de5e = L.popup({maxWidth: '300'});
+
+            
+                var html_122602aa82d54de2942d7893887ed50c = $('<div id="html_122602aa82d54de2942d7893887ed50c" style="width: 100.0%; height: 100.0%;">University of Iowa Libraries</div>')[0];
+                popup_7d894a85ac4a4b32bbd5a7941b80de5e.setContent(html_122602aa82d54de2942d7893887ed50c);
+            
+
+            circle_29fcc9a3886e47b1bac6b9d4aef8eeec.bindPopup(popup_7d894a85ac4a4b32bbd5a7941b80de5e);
+
+            
+        
+    
+
+            var circle_0d58888812cc4ccd8471220a939ab978 = L.circle(
+                [42.0288663,-93.6480307],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_36670ecb070b40ccb30d823d737d71a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_a359adc98e264a35af089e78d69d53d1 = $('<div id="html_a359adc98e264a35af089e78d69d53d1" style="width: 100.0%; height: 100.0%;">Iowa State University Library</div>')[0];
+                popup_36670ecb070b40ccb30d823d737d71a9.setContent(html_a359adc98e264a35af089e78d69d53d1);
+            
+
+            circle_0d58888812cc4ccd8471220a939ab978.bindPopup(popup_36670ecb070b40ccb30d823d737d71a9);
+
+            
+        
+    
+
+            var circle_6e36ee0937c241eb959ab65230b64553 = L.circle(
+                [33.4183159,-111.9311939],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b57a749a57d641219448c95d5812cd25 = L.popup({maxWidth: '300'});
+
+            
+                var html_9c193c5fcd6643e7a87a4a0c68f7ee96 = $('<div id="html_9c193c5fcd6643e7a87a4a0c68f7ee96" style="width: 100.0%; height: 100.0%;">Arizona State University Libraries</div>')[0];
+                popup_b57a749a57d641219448c95d5812cd25.setContent(html_9c193c5fcd6643e7a87a4a0c68f7ee96);
+            
+
+            circle_6e36ee0937c241eb959ab65230b64553.bindPopup(popup_b57a749a57d641219448c95d5812cd25);
+
+            
+        
+    
+
+            var circle_969085edbea645628970d3898c8d726f = L.circle(
+                [38.9499492,-95.2658318],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_0e04e659c6524cff875c29ae212b5c05 = L.popup({maxWidth: '300'});
+
+            
+                var html_4d6ebb0ae4ca4e7aa8d11f3ef82c7180 = $('<div id="html_4d6ebb0ae4ca4e7aa8d11f3ef82c7180" style="width: 100.0%; height: 100.0%;">University of Kansas Libraries</div>')[0];
+                popup_0e04e659c6524cff875c29ae212b5c05.setContent(html_4d6ebb0ae4ca4e7aa8d11f3ef82c7180);
+            
+
+            circle_969085edbea645628970d3898c8d726f.bindPopup(popup_0e04e659c6524cff875c29ae212b5c05);
+
+            
+        
+    
+
+            var circle_d5173663cc284dab895edf6470e106cd = L.circle(
+                [41.15375,-81.35127],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_33b28fbbf9cc4d1a8e6c614ec983a3c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_74ea396c116f4956b61195873a827c9a = $('<div id="html_74ea396c116f4956b61195873a827c9a" style="width: 100.0%; height: 100.0%;">Kent State University Libraries</div>')[0];
+                popup_33b28fbbf9cc4d1a8e6c614ec983a3c7.setContent(html_74ea396c116f4956b61195873a827c9a);
+            
+
+            circle_d5173663cc284dab895edf6470e106cd.bindPopup(popup_33b28fbbf9cc4d1a8e6c614ec983a3c7);
+
+            
+        
+    
+
+            var circle_659149c57efe4ade9aaf61728f4c9e3c = L.circle(
+                [38.0196138,-84.4994488],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_af2db7dc2fc24d86b3d3d69d37b2fd2d = L.popup({maxWidth: '300'});
+
+            
+                var html_928fbc4908bf4dc2bcc6eb3228007883 = $('<div id="html_928fbc4908bf4dc2bcc6eb3228007883" style="width: 100.0%; height: 100.0%;">University of Kentucky Libraries</div>')[0];
+                popup_af2db7dc2fc24d86b3d3d69d37b2fd2d.setContent(html_928fbc4908bf4dc2bcc6eb3228007883);
+            
+
+            circle_659149c57efe4ade9aaf61728f4c9e3c.bindPopup(popup_af2db7dc2fc24d86b3d3d69d37b2fd2d);
+
+            
+        
+    
+
+            var circle_dcddc65d4b3b4765a1d15e69f56ac711 = L.circle(
+                [32.5909562,-85.4929785],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_de7a9aa19f114143b4b5efcf689002b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_a017ed674c1846bf906f57bdecec823c = $('<div id="html_a017ed674c1846bf906f57bdecec823c" style="width: 100.0%; height: 100.0%;">Auburn University Libraries</div>')[0];
+                popup_de7a9aa19f114143b4b5efcf689002b5.setContent(html_a017ed674c1846bf906f57bdecec823c);
+            
+
+            circle_dcddc65d4b3b4765a1d15e69f56ac711.bindPopup(popup_de7a9aa19f114143b4b5efcf689002b5);
+
+            
+        
+    
+
+            var circle_938f03fdaa3647d88375ebe7adc8598c = L.circle(
+                [30.41,-91.18],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_91ec483ff9764295930219227e122bc1 = L.popup({maxWidth: '300'});
+
+            
+                var html_ed78672832ed40dfb711f9452c81783c = $('<div id="html_ed78672832ed40dfb711f9452c81783c" style="width: 100.0%; height: 100.0%;">Louisiana State University Libraries</div>')[0];
+                popup_91ec483ff9764295930219227e122bc1.setContent(html_ed78672832ed40dfb711f9452c81783c);
+            
+
+            circle_938f03fdaa3647d88375ebe7adc8598c.bindPopup(popup_91ec483ff9764295930219227e122bc1);
+
+            
+        
+    
+
+            var circle_d619d1320be548e5b76d44bfe710677f = L.circle(
+                [38.2169261,-85.7624992],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_90872fcd8db3426fb6de3a2497fbc12d = L.popup({maxWidth: '300'});
+
+            
+                var html_13f5b83a046a41c1a5d26a67992e2e61 = $('<div id="html_13f5b83a046a41c1a5d26a67992e2e61" style="width: 100.0%; height: 100.0%;">University of Louisville Libraries</div>')[0];
+                popup_90872fcd8db3426fb6de3a2497fbc12d.setContent(html_13f5b83a046a41c1a5d26a67992e2e61);
+            
+
+            circle_d619d1320be548e5b76d44bfe710677f.bindPopup(popup_90872fcd8db3426fb6de3a2497fbc12d);
+
+            
+        
+    
+
+            var circle_c1e1f0094c9e4e179a89c4c761e804ad = L.circle(
+                [38.9908487,-76.944141],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_e867ac9211ab4a11977e5680e6a3af53 = L.popup({maxWidth: '300'});
+
+            
+                var html_05157b14e0444dae8e38d3eea10cb71d = $('<div id="html_05157b14e0444dae8e38d3eea10cb71d" style="width: 100.0%; height: 100.0%;">University of Maryland Libraries</div>')[0];
+                popup_e867ac9211ab4a11977e5680e6a3af53.setContent(html_05157b14e0444dae8e38d3eea10cb71d);
+            
+
+            circle_c1e1f0094c9e4e179a89c4c761e804ad.bindPopup(popup_e867ac9211ab4a11977e5680e6a3af53);
+
+            
+        
+    
+
+            var circle_bd57546300254896a73a049f1ffbcb4b = L.circle(
+                [42.3956556,-72.5219617],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_7faa869546974a10ae67e02709947e45 = L.popup({maxWidth: '300'});
+
+            
+                var html_cae640b580eb4cbf9e3a5fb02cc1810e = $('<div id="html_cae640b580eb4cbf9e3a5fb02cc1810e" style="width: 100.0%; height: 100.0%;">University of Massachusetts Amherst Libraries</div>')[0];
+                popup_7faa869546974a10ae67e02709947e45.setContent(html_cae640b580eb4cbf9e3a5fb02cc1810e);
+            
+
+            circle_bd57546300254896a73a049f1ffbcb4b.bindPopup(popup_7faa869546974a10ae67e02709947e45);
+
+            
+        
+    
+
+            var circle_3de72862ff8f49aa919286fd177d5849 = L.circle(
+                [42.3053253,-83.6694169],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_82039914d3d3474a8163c033b53e5e44 = L.popup({maxWidth: '300'});
+
+            
+                var html_00dcac604fd54949aa33f454cf82096c = $('<div id="html_00dcac604fd54949aa33f454cf82096c" style="width: 100.0%; height: 100.0%;">University of Michigan Library</div>')[0];
+                popup_82039914d3d3474a8163c033b53e5e44.setContent(html_00dcac604fd54949aa33f454cf82096c);
+            
+
+            circle_3de72862ff8f49aa919286fd177d5849.bindPopup(popup_82039914d3d3474a8163c033b53e5e44);
+
+            
+        
+    
+
+            var circle_9c77fa34a4704d93987f0b27804e0e1e = L.circle(
+                [42.724305,-84.4796047],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_f7d1166517a94eafbe837b650a8fbdd8 = L.popup({maxWidth: '300'});
+
+            
+                var html_40cd0effc9414a00a2fe1fae0f067c87 = $('<div id="html_40cd0effc9414a00a2fe1fae0f067c87" style="width: 100.0%; height: 100.0%;">Michigan State University Libraries</div>')[0];
+                popup_f7d1166517a94eafbe837b650a8fbdd8.setContent(html_40cd0effc9414a00a2fe1fae0f067c87);
+            
+
+            circle_9c77fa34a4704d93987f0b27804e0e1e.bindPopup(popup_f7d1166517a94eafbe837b650a8fbdd8);
+
+            
+        
+    
+
+            var circle_6b0ba44f171a4f90af3f64930b9b202b = L.circle(
+                [44.9741561,-93.2342],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_c696677a6dd54b059ef16b6a6c4b6958 = L.popup({maxWidth: '300'});
+
+            
+                var html_b393d758a9c64cecba495ebf9ac1aa90 = $('<div id="html_b393d758a9c64cecba495ebf9ac1aa90" style="width: 100.0%; height: 100.0%;">University of Minnesota Libraries</div>')[0];
+                popup_c696677a6dd54b059ef16b6a6c4b6958.setContent(html_b393d758a9c64cecba495ebf9ac1aa90);
+            
+
+            circle_6b0ba44f171a4f90af3f64930b9b202b.bindPopup(popup_c696677a6dd54b059ef16b6a6c4b6958);
+
+            
+        
+    
+
+            var circle_173194ef9978455eb0ce14161eca1b38 = L.circle(
+                [38.951674,-92.332541],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_0736cdd2005647db9cdcfce585d448a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_2c3eacf7082f4560aecaba9c18e09aee = $('<div id="html_2c3eacf7082f4560aecaba9c18e09aee" style="width: 100.0%; height: 100.0%;">University of Missouri-Columbia Libraries</div>')[0];
+                popup_0736cdd2005647db9cdcfce585d448a1.setContent(html_2c3eacf7082f4560aecaba9c18e09aee);
+            
+
+            circle_173194ef9978455eb0ce14161eca1b38.bindPopup(popup_0736cdd2005647db9cdcfce585d448a1);
+
+            
+        
+    
+
+            var circle_4e74c31bbb654aa1bb143d87dd7bfbac = L.circle(
+                [40.818253,-96.6952254],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_fa2478f49f1c4f1282e6a761aed57e0f = L.popup({maxWidth: '300'});
+
+            
+                var html_8fadaa58cd68403da31db7214b165dfa = $('<div id="html_8fadaa58cd68403da31db7214b165dfa" style="width: 100.0%; height: 100.0%;">University of Nebraska-Lincoln Libraries</div>')[0];
+                popup_fa2478f49f1c4f1282e6a761aed57e0f.setContent(html_8fadaa58cd68403da31db7214b165dfa);
+            
+
+            circle_4e74c31bbb654aa1bb143d87dd7bfbac.bindPopup(popup_fa2478f49f1c4f1282e6a761aed57e0f);
+
+            
+        
+    
+
+            var circle_8da57e1d95ec40a98c63798f8846dd70 = L.circle(
+                [35.09,-106.62],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b1c9eb9140984416aadae31ceb8cca3e = L.popup({maxWidth: '300'});
+
+            
+                var html_b64f0a29a80e4dcc80a0c94754e65782 = $('<div id="html_b64f0a29a80e4dcc80a0c94754e65782" style="width: 100.0%; height: 100.0%;">University of New Mexico Libraries</div>')[0];
+                popup_b1c9eb9140984416aadae31ceb8cca3e.setContent(html_b64f0a29a80e4dcc80a0c94754e65782);
+            
+
+            circle_8da57e1d95ec40a98c63798f8846dd70.bindPopup(popup_b1c9eb9140984416aadae31ceb8cca3e);
+
+            
+        
+    
+
+            var circle_84b72c50bd7747f99e860ed0909ace35 = L.circle(
+                [35.9722081,-79.0475559],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_76123400e5a442148856195e80650b9e = L.popup({maxWidth: '300'});
+
+            
+                var html_91017b8087064e8ca3e489734eb5a20d = $('<div id="html_91017b8087064e8ca3e489734eb5a20d" style="width: 100.0%; height: 100.0%;">University of North Carolina at Chapel Hill Libraries</div>')[0];
+                popup_76123400e5a442148856195e80650b9e.setContent(html_91017b8087064e8ca3e489734eb5a20d);
+            
+
+            circle_84b72c50bd7747f99e860ed0909ace35.bindPopup(popup_76123400e5a442148856195e80650b9e);
+
+            
+        
+    
+
+            var circle_98a41fb1660b4a769cdfdcc7308c2c50 = L.circle(
+                [35.7850545,-78.6819449],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_83b4c5b1964646cb917eb9a595e5fe1d = L.popup({maxWidth: '300'});
+
+            
+                var html_a237b939975e4305b0b0e8e160c25f22 = $('<div id="html_a237b939975e4305b0b0e8e160c25f22" style="width: 100.0%; height: 100.0%;">North Carolina State University Libraries</div>')[0];
+                popup_83b4c5b1964646cb917eb9a595e5fe1d.setContent(html_a237b939975e4305b0b0e8e160c25f22);
+            
+
+            circle_98a41fb1660b4a769cdfdcc7308c2c50.bindPopup(popup_83b4c5b1964646cb917eb9a595e5fe1d);
+
+            
+        
+    
+
+            var circle_6755825170a344be940769606ed32ce6 = L.circle(
+                [39.3221839,-82.1060683],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_12510856d18f420b84945ecda55d0995 = L.popup({maxWidth: '300'});
+
+            
+                var html_ad2dbeea1dec4fc3a2d1ae5b4f57e682 = $('<div id="html_ad2dbeea1dec4fc3a2d1ae5b4f57e682" style="width: 100.0%; height: 100.0%;">Ohio University Libraries</div>')[0];
+                popup_12510856d18f420b84945ecda55d0995.setContent(html_ad2dbeea1dec4fc3a2d1ae5b4f57e682);
+            
+
+            circle_6755825170a344be940769606ed32ce6.bindPopup(popup_12510856d18f420b84945ecda55d0995);
+
+            
+        
+    
+
+            var circle_9225314d2d9a42ac82280c261a0d3051 = L.circle(
+                [39.9990626,-83.0173386],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_a4a70d91a5a242b0b7118dead17dc25b = L.popup({maxWidth: '300'});
+
+            
+                var html_ea1c6023e3d84bd3869e3def7f964fae = $('<div id="html_ea1c6023e3d84bd3869e3def7f964fae" style="width: 100.0%; height: 100.0%;">Ohio State University Libraries</div>')[0];
+                popup_a4a70d91a5a242b0b7118dead17dc25b.setContent(html_ea1c6023e3d84bd3869e3def7f964fae);
+            
+
+            circle_9225314d2d9a42ac82280c261a0d3051.bindPopup(popup_a4a70d91a5a242b0b7118dead17dc25b);
+
+            
+        
+    
+
+            var circle_5bee1a00829f48acb28a77ee654e4e4e = L.circle(
+                [35.1879507,-97.4421919],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_f6263192f9fb4e3baf6643380f892e1d = L.popup({maxWidth: '300'});
+
+            
+                var html_11da879ec5e64a47b10fe8412f498475 = $('<div id="html_11da879ec5e64a47b10fe8412f498475" style="width: 100.0%; height: 100.0%;">University of Oklahoma Libraries</div>')[0];
+                popup_f6263192f9fb4e3baf6643380f892e1d.setContent(html_11da879ec5e64a47b10fe8412f498475);
+            
+
+            circle_5bee1a00829f48acb28a77ee654e4e4e.bindPopup(popup_f6263192f9fb4e3baf6643380f892e1d);
+
+            
+        
+    
+
+            var circle_d04f45a33af8441998c01e47a9b886e8 = L.circle(
+                [36.1198996,-97.0888415],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_7f14decef7534fe5a025587b4f3b4c21 = L.popup({maxWidth: '300'});
+
+            
+                var html_8861c8e2ba0645f6bb8c5fcc8450d876 = $('<div id="html_8861c8e2ba0645f6bb8c5fcc8450d876" style="width: 100.0%; height: 100.0%;">Oklahoma State University Library</div>')[0];
+                popup_7f14decef7534fe5a025587b4f3b4c21.setContent(html_8861c8e2ba0645f6bb8c5fcc8450d876);
+            
+
+            circle_d04f45a33af8441998c01e47a9b886e8.bindPopup(popup_7f14decef7534fe5a025587b4f3b4c21);
+
+            
+        
+    
+
+            var circle_cd67e8e45f0d49df97c82fc467708722 = L.circle(
+                [44.0350489,-123.0473566],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_8ed60897d67c457b8a025a1f1eefbe0a = L.popup({maxWidth: '300'});
+
+            
+                var html_3b963008e767416488db97d9d7e55e0b = $('<div id="html_3b963008e767416488db97d9d7e55e0b" style="width: 100.0%; height: 100.0%;">University of Oregon Libraries</div>')[0];
+                popup_8ed60897d67c457b8a025a1f1eefbe0a.setContent(html_3b963008e767416488db97d9d7e55e0b);
+            
+
+            circle_cd67e8e45f0d49df97c82fc467708722.bindPopup(popup_8ed60897d67c457b8a025a1f1eefbe0a);
+
+            
+        
+    
+
+            var circle_3a719f714bb642ab989bdff127e1fc6b = L.circle(
+                [40.8084075,-77.8638835],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_52780e22465a42a9972e5e29ef49ad3d = L.popup({maxWidth: '300'});
+
+            
+                var html_f6d1a3a3585349a593f80ffbab4463ca = $('<div id="html_f6d1a3a3585349a593f80ffbab4463ca" style="width: 100.0%; height: 100.0%;">Pennsylvania State University Libraries</div>')[0];
+                popup_52780e22465a42a9972e5e29ef49ad3d.setContent(html_f6d1a3a3585349a593f80ffbab4463ca);
+            
+
+            circle_3a719f714bb642ab989bdff127e1fc6b.bindPopup(popup_52780e22465a42a9972e5e29ef49ad3d);
+
+            
+        
+    
+
+            var circle_377c9aa3d67e4745b30869ba8fe052f1 = L.circle(
+                [40.4424402,-79.9531948],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_bf05e28e6f414be5808d6fba79359e9c = L.popup({maxWidth: '300'});
+
+            
+                var html_56dc5924bd8449bdabb5b839a79c79e1 = $('<div id="html_56dc5924bd8449bdabb5b839a79c79e1" style="width: 100.0%; height: 100.0%;">University of Pittsburgh Libraries</div>')[0];
+                popup_bf05e28e6f414be5808d6fba79359e9c.setContent(html_56dc5924bd8449bdabb5b839a79c79e1);
+            
+
+            circle_377c9aa3d67e4745b30869ba8fe052f1.bindPopup(popup_bf05e28e6f414be5808d6fba79359e9c);
+
+            
+        
+    
+
+            var circle_7832668ebc774261b2d2074558a24122 = L.circle(
+                [40.4401775,-86.9261008],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_f3b33830e8d243339efb99b091bc98c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_97219549d8cb478b91d942488e1ee048 = $('<div id="html_97219549d8cb478b91d942488e1ee048" style="width: 100.0%; height: 100.0%;">Purdue University Libraries</div>')[0];
+                popup_f3b33830e8d243339efb99b091bc98c4.setContent(html_97219549d8cb478b91d942488e1ee048);
+            
+
+            circle_7832668ebc774261b2d2074558a24122.bindPopup(popup_f3b33830e8d243339efb99b091bc98c4);
+
+            
+        
+    
+
+            var circle_7b439591cfcd486da25444ed62a4869a = L.circle(
+                [40.4861552,-74.45185],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_26dde6b81ab34ee5b58c0e0ea336e3d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_523fe7c916094d11b4301e876f64a27e = $('<div id="html_523fe7c916094d11b4301e876f64a27e" style="width: 100.0%; height: 100.0%;">Rutgers University Libraries</div>')[0];
+                popup_26dde6b81ab34ee5b58c0e0ea336e3d0.setContent(html_523fe7c916094d11b4301e876f64a27e);
+            
+
+            circle_7b439591cfcd486da25444ed62a4869a.bindPopup(popup_26dde6b81ab34ee5b58c0e0ea336e3d0);
+
+            
+        
+    
+
+            var circle_45eadac6205d466e92adef461698624a = L.circle(
+                [33.9963052,-81.027157],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_d0acedd9716e4638aad37076d3e2a238 = L.popup({maxWidth: '300'});
+
+            
+                var html_07c067e0bb044c3896f15e6695185e42 = $('<div id="html_07c067e0bb044c3896f15e6695185e42" style="width: 100.0%; height: 100.0%;">University of South Carolina Libraries</div>')[0];
+                popup_d0acedd9716e4638aad37076d3e2a238.setContent(html_07c067e0bb044c3896f15e6695185e42);
+            
+
+            circle_45eadac6205d466e92adef461698624a.bindPopup(popup_d0acedd9716e4638aad37076d3e2a238);
+
+            
+        
+    
+
+            var circle_16be153633fb422fa5b7f48c23f2c48d = L.circle(
+                [37.7277751,-89.2148386],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b9bdc6aec1224610952dc6041094acdd = L.popup({maxWidth: '300'});
+
+            
+                var html_cc71a59af933408c8f55e63a923d2812 = $('<div id="html_cc71a59af933408c8f55e63a923d2812" style="width: 100.0%; height: 100.0%;">Southern Illinois University Carbondale Library</div>')[0];
+                popup_b9bdc6aec1224610952dc6041094acdd.setContent(html_cc71a59af933408c8f55e63a923d2812);
+            
+
+            circle_16be153633fb422fa5b7f48c23f2c48d.bindPopup(popup_b9bdc6aec1224610952dc6041094acdd);
+
+            
+        
+    
+
+            var circle_bc372fef52c54fd59ce33c8cb60b2d0d = L.circle(
+                [42.6907733,-73.8279381],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_4e0f80660ff14e808d9e7752d9c1c380 = L.popup({maxWidth: '300'});
+
+            
+                var html_fbac2d0783ac4c2990830434929c36fd = $('<div id="html_fbac2d0783ac4c2990830434929c36fd" style="width: 100.0%; height: 100.0%;">University at Albany, SUNY, Libraries</div>')[0];
+                popup_4e0f80660ff14e808d9e7752d9c1c380.setContent(html_fbac2d0783ac4c2990830434929c36fd);
+            
+
+            circle_bc372fef52c54fd59ce33c8cb60b2d0d.bindPopup(popup_4e0f80660ff14e808d9e7752d9c1c380);
+
+            
+        
+    
+
+            var circle_2dc8c08c24b14ae6a02448391fc4684c = L.circle(
+                [42.8711,-78.8593199],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_5b617d06c3774c3da4dca47d6b856ddc = L.popup({maxWidth: '300'});
+
+            
+                var html_c08e30da44f24328b2d4879fc84d0b5d = $('<div id="html_c08e30da44f24328b2d4879fc84d0b5d" style="width: 100.0%; height: 100.0%;">University at Buffalo, SUNY, Libraries</div>')[0];
+                popup_5b617d06c3774c3da4dca47d6b856ddc.setContent(html_c08e30da44f24328b2d4879fc84d0b5d);
+            
+
+            circle_2dc8c08c24b14ae6a02448391fc4684c.bindPopup(popup_5b617d06c3774c3da4dca47d6b856ddc);
+
+            
+        
+    
+
+            var circle_b405124072e4406da39977f99bb31a5b = L.circle(
+                [40.9132244,-73.1261091],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_fd5e2622d57d40ad83310238bf65213f = L.popup({maxWidth: '300'});
+
+            
+                var html_ccb4efe30c8344a2891e36d30ec36d5c = $('<div id="html_ccb4efe30c8344a2891e36d30ec36d5c" style="width: 100.0%; height: 100.0%;">Stony Brook University, SUNY, Libraries</div>')[0];
+                popup_fd5e2622d57d40ad83310238bf65213f.setContent(html_ccb4efe30c8344a2891e36d30ec36d5c);
+            
+
+            circle_b405124072e4406da39977f99bb31a5b.bindPopup(popup_fd5e2622d57d40ad83310238bf65213f);
+
+            
+        
+    
+
+            var circle_4cde95fd2b3b408e8b21faa00be2606e = L.circle(
+                [39.9795244,-75.145782],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_a22953db82a24aa39188325dbb40ead6 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ea2773eb3b145f8b1e6427794133823 = $('<div id="html_9ea2773eb3b145f8b1e6427794133823" style="width: 100.0%; height: 100.0%;">Temple University Libraries</div>')[0];
+                popup_a22953db82a24aa39188325dbb40ead6.setContent(html_9ea2773eb3b145f8b1e6427794133823);
+            
+
+            circle_4cde95fd2b3b408e8b21faa00be2606e.bindPopup(popup_a22953db82a24aa39188325dbb40ead6);
+
+            
+        
+    
+
+            var circle_464a9b5da9094bcba6004987f9082e6f = L.circle(
+                [35.9433558,-83.9386991],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_0f7e40573f1f47f5a53e3958cb6ed431 = L.popup({maxWidth: '300'});
+
+            
+                var html_9cce39f3e1734c93ac0cd9d8c3d1c87c = $('<div id="html_9cce39f3e1734c93ac0cd9d8c3d1c87c" style="width: 100.0%; height: 100.0%;">University of Tennessee Libraries</div>')[0];
+                popup_0f7e40573f1f47f5a53e3958cb6ed431.setContent(html_9cce39f3e1734c93ac0cd9d8c3d1c87c);
+            
+
+            circle_464a9b5da9094bcba6004987f9082e6f.bindPopup(popup_0f7e40573f1f47f5a53e3958cb6ed431);
+
+            
+        
+    
+
+            var circle_d2dd92b76a0a4dbf8621a32cf05d61b5 = L.circle(
+                [30.28,-97.74],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_d79e63616866471cab71535bb223dc6f = L.popup({maxWidth: '300'});
+
+            
+                var html_cee061e27fd14e8291388f96c804480c = $('<div id="html_cee061e27fd14e8291388f96c804480c" style="width: 100.0%; height: 100.0%;">University of Texas at Austin Libraries</div>')[0];
+                popup_d79e63616866471cab71535bb223dc6f.setContent(html_cee061e27fd14e8291388f96c804480c);
+            
+
+            circle_d2dd92b76a0a4dbf8621a32cf05d61b5.bindPopup(popup_d79e63616866471cab71535bb223dc6f);
+
+            
+        
+    
+
+            var circle_620ee64531304f8e944bb04c6602aebd = L.circle(
+                [30.61,-96.34],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_08d62cd76d2d4910a3e64dd018c9cd70 = L.popup({maxWidth: '300'});
+
+            
+                var html_37a7049911c34e18afe8299e34321cfa = $('<div id="html_37a7049911c34e18afe8299e34321cfa" style="width: 100.0%; height: 100.0%;">Texas A&amp;M University Libraries</div>')[0];
+                popup_08d62cd76d2d4910a3e64dd018c9cd70.setContent(html_37a7049911c34e18afe8299e34321cfa);
+            
+
+            circle_620ee64531304f8e944bb04c6602aebd.bindPopup(popup_08d62cd76d2d4910a3e64dd018c9cd70);
+
+            
+        
+    
+
+            var circle_16c8b2df28424ff0bcaca20291996c45 = L.circle(
+                [33.5886439,-101.8820434],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_bb406d643b894931aa39d2ae976711e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_fee1b31f5b974df7a385f36bea48e1ff = $('<div id="html_fee1b31f5b974df7a385f36bea48e1ff" style="width: 100.0%; height: 100.0%;">Texas Tech University Libraries</div>')[0];
+                popup_bb406d643b894931aa39d2ae976711e9.setContent(html_fee1b31f5b974df7a385f36bea48e1ff);
+            
+
+            circle_16c8b2df28424ff0bcaca20291996c45.bindPopup(popup_bb406d643b894931aa39d2ae976711e9);
+
+            
+        
+    
+
+            var circle_04c49b4b704e4fb399d7f39487160ec5 = L.circle(
+                [40.7652201,-111.8419536],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_3fce80debab640cbaf2e59e3a6e75088 = L.popup({maxWidth: '300'});
+
+            
+                var html_0c80b8ba48dc4984a7db716e018958f3 = $('<div id="html_0c80b8ba48dc4984a7db716e018958f3" style="width: 100.0%; height: 100.0%;">University of Utah Library</div>')[0];
+                popup_3fce80debab640cbaf2e59e3a6e75088.setContent(html_0c80b8ba48dc4984a7db716e018958f3);
+            
+
+            circle_04c49b4b704e4fb399d7f39487160ec5.bindPopup(popup_3fce80debab640cbaf2e59e3a6e75088);
+
+            
+        
+    
+
+            var circle_20458e9f553f49d8b038ca7269f362dd = L.circle(
+                [38.0340277,-78.510016],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_c5611ac8e90c41f0a8fbc5cc075553e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_9be3c132223e416892a5da0a976af3d1 = $('<div id="html_9be3c132223e416892a5da0a976af3d1" style="width: 100.0%; height: 100.0%;">University of Virginia Library</div>')[0];
+                popup_c5611ac8e90c41f0a8fbc5cc075553e9.setContent(html_9be3c132223e416892a5da0a976af3d1);
+            
+
+            circle_20458e9f553f49d8b038ca7269f362dd.bindPopup(popup_c5611ac8e90c41f0a8fbc5cc075553e9);
+
+            
+        
+    
+
+            var circle_d28b56b8339f4024a164f4f0c62b4749 = L.circle(
+                [37.870151,-122.2594606],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_7f5137b39d084e56a1e546ac1dfe0f72 = L.popup({maxWidth: '300'});
+
+            
+                var html_5434ed19d71c48c586255de31c6dc57a = $('<div id="html_5434ed19d71c48c586255de31c6dc57a" style="width: 100.0%; height: 100.0%;">University of California, Berkeley Library</div>')[0];
+                popup_7f5137b39d084e56a1e546ac1dfe0f72.setContent(html_5434ed19d71c48c586255de31c6dc57a);
+            
+
+            circle_d28b56b8339f4024a164f4f0c62b4749.bindPopup(popup_7f5137b39d084e56a1e546ac1dfe0f72);
+
+            
+        
+    
+
+            var circle_113540089e8f483eaa7d986930a9521e = L.circle(
+                [37.2299999,-80.41],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_a4e6953cd6684f638eec30483d2a2ede = L.popup({maxWidth: '300'});
+
+            
+                var html_56aec6234b8549f4aeffdf471309a796 = $('<div id="html_56aec6234b8549f4aeffdf471309a796" style="width: 100.0%; height: 100.0%;">Virginia Tech Libraries</div>')[0];
+                popup_a4e6953cd6684f638eec30483d2a2ede.setContent(html_56aec6234b8549f4aeffdf471309a796);
+            
+
+            circle_113540089e8f483eaa7d986930a9521e.bindPopup(popup_a4e6953cd6684f638eec30483d2a2ede);
+
+            
+        
+    
+
+            var circle_7c4b833d953447f8a3122f65eca7d172 = L.circle(
+                [47.6508882,-122.3084023],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_bafbeafbb92d4391a17284f809041834 = L.popup({maxWidth: '300'});
+
+            
+                var html_91452775185344e0aeff77f7c491236b = $('<div id="html_91452775185344e0aeff77f7c491236b" style="width: 100.0%; height: 100.0%;">University of Washington Libraries</div>')[0];
+                popup_bafbeafbb92d4391a17284f809041834.setContent(html_91452775185344e0aeff77f7c491236b);
+            
+
+            circle_7c4b833d953447f8a3122f65eca7d172.bindPopup(popup_bafbeafbb92d4391a17284f809041834);
+
+            
+        
+    
+
+            var circle_15d93af4402044b5b38f2e7385731fbe = L.circle(
+                [46.7287207,-117.1542743],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b53c71ad9fca47ab9194c6f78598397a = L.popup({maxWidth: '300'});
+
+            
+                var html_3063cbd6b3ce411f82746759c1a6e05b = $('<div id="html_3063cbd6b3ce411f82746759c1a6e05b" style="width: 100.0%; height: 100.0%;">Washington State University Libraries</div>')[0];
+                popup_b53c71ad9fca47ab9194c6f78598397a.setContent(html_3063cbd6b3ce411f82746759c1a6e05b);
+            
+
+            circle_15d93af4402044b5b38f2e7385731fbe.bindPopup(popup_b53c71ad9fca47ab9194c6f78598397a);
+
+            
+        
+    
+
+            var circle_b816c60944084293a1269e3fad0c68de = L.circle(
+                [42.3664506,-83.0737195],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_925aa9f39f1d44b088f2c3b0b24c5ad2 = L.popup({maxWidth: '300'});
+
+            
+                var html_d37f35539bcb4b918f4a948f632c6c25 = $('<div id="html_d37f35539bcb4b918f4a948f632c6c25" style="width: 100.0%; height: 100.0%;">Wayne State University Libraries</div>')[0];
+                popup_925aa9f39f1d44b088f2c3b0b24c5ad2.setContent(html_d37f35539bcb4b918f4a948f632c6c25);
+            
+
+            circle_b816c60944084293a1269e3fad0c68de.bindPopup(popup_925aa9f39f1d44b088f2c3b0b24c5ad2);
+
+            
+        
+    
+
+            var circle_6c6cffd2a8184f6990d3714ef94b1b82 = L.circle(
+                [43.1054334,-89.4269287],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_cbd7ae6c38c54b84a950905cdcc9085a = L.popup({maxWidth: '300'});
+
+            
+                var html_8e3a1c85efa444f1a576148e2d06d98e = $('<div id="html_8e3a1c85efa444f1a576148e2d06d98e" style="width: 100.0%; height: 100.0%;">University of Wisconsin-Madison Libraries</div>')[0];
+                popup_cbd7ae6c38c54b84a950905cdcc9085a.setContent(html_8e3a1c85efa444f1a576148e2d06d98e);
+            
+
+            circle_6c6cffd2a8184f6990d3714ef94b1b82.bindPopup(popup_cbd7ae6c38c54b84a950905cdcc9085a);
+
+            
+        
+    
+
+            var circle_8a733628b6b746de81dd10490bca9805 = L.circle(
+                [41.5091257,-81.6089873],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_7f36831b81e34ad68320a24067fc6025 = L.popup({maxWidth: '300'});
+
+            
+                var html_38f05fecb66e402590182ca9bcc175bf = $('<div id="html_38f05fecb66e402590182ca9bcc175bf" style="width: 100.0%; height: 100.0%;">Case Western Reserve University Libraries</div>')[0];
+                popup_7f36831b81e34ad68320a24067fc6025.setContent(html_38f05fecb66e402590182ca9bcc175bf);
+            
+
+            circle_8a733628b6b746de81dd10490bca9805.bindPopup(popup_7f36831b81e34ad68320a24067fc6025);
+
+            
+        
+    
+
+            var circle_8d2743a1e0de4aa695a3c1559b0d7082 = L.circle(
+                [41.7805099,-87.603826],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_7b11615108804969b565f98bb4cf0589 = L.popup({maxWidth: '300'});
+
+            
+                var html_9414deb7691044c0acb958ce2823abe9 = $('<div id="html_9414deb7691044c0acb958ce2823abe9" style="width: 100.0%; height: 100.0%;">University of Chicago Library</div>')[0];
+                popup_7b11615108804969b565f98bb4cf0589.setContent(html_9414deb7691044c0acb958ce2823abe9);
+            
+
+            circle_8d2743a1e0de4aa695a3c1559b0d7082.bindPopup(popup_7b11615108804969b565f98bb4cf0589);
+
+            
+        
+    
+
+            var circle_83b54fb7f36446b986587fa959815bc2 = L.circle(
+                [40.8138912,-73.9624327],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_4bbfe9ee32a041ad99b7e95158c664dd = L.popup({maxWidth: '300'});
+
+            
+                var html_70d38927932a49e3a14bb82f54fe450e = $('<div id="html_70d38927932a49e3a14bb82f54fe450e" style="width: 100.0%; height: 100.0%;">Columbia University Libraries</div>')[0];
+                popup_4bbfe9ee32a041ad99b7e95158c664dd.setContent(html_70d38927932a49e3a14bb82f54fe450e);
+            
+
+            circle_83b54fb7f36446b986587fa959815bc2.bindPopup(popup_4bbfe9ee32a041ad99b7e95158c664dd);
+
+            
+        
+    
+
+            var circle_e4b8738ca99d4bb391d82f6f1affb63c = L.circle(
+                [42.4467049,-76.4830579],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_602adac20aef4e51b706f1f887177668 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d71e4df4d574545924a890cea620259 = $('<div id="html_8d71e4df4d574545924a890cea620259" style="width: 100.0%; height: 100.0%;">Cornell University Library</div>')[0];
+                popup_602adac20aef4e51b706f1f887177668.setContent(html_8d71e4df4d574545924a890cea620259);
+            
+
+            circle_e4b8738ca99d4bb391d82f6f1affb63c.bindPopup(popup_602adac20aef4e51b706f1f887177668);
+
+            
+        
+    
+
+            var circle_e3002fe212d649a88fdc2dc26f0c6610 = L.circle(
+                [43.7019583,-72.2889045],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_2565af1c2a25408084f51de04a002201 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd949cee84a449f49c86be83f304da01 = $('<div id="html_cd949cee84a449f49c86be83f304da01" style="width: 100.0%; height: 100.0%;">Dartmouth College Library</div>')[0];
+                popup_2565af1c2a25408084f51de04a002201.setContent(html_cd949cee84a449f49c86be83f304da01);
+            
+
+            circle_e3002fe212d649a88fdc2dc26f0c6610.bindPopup(popup_2565af1c2a25408084f51de04a002201);
+
+            
+        
+    
+
+            var circle_fbd85e3cc6ae46acb5646a8da13fa731 = L.circle(
+                [35.9992263,-78.9472089],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b374b29da1c34df8b0dd7421962b8ab1 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ab0be97792e43469fb497ec77cc738d = $('<div id="html_8ab0be97792e43469fb497ec77cc738d" style="width: 100.0%; height: 100.0%;">Duke University Libraries</div>')[0];
+                popup_b374b29da1c34df8b0dd7421962b8ab1.setContent(html_8ab0be97792e43469fb497ec77cc738d);
+            
+
+            circle_fbd85e3cc6ae46acb5646a8da13fa731.bindPopup(popup_b374b29da1c34df8b0dd7421962b8ab1);
+
+            
+        
+    
+
+            var circle_130e3104c4234c9ea150f5d9cf70ad73 = L.circle(
+                [33.7980995,-84.3259367],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_506090db0360436b973b7002eef467d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba04dd1d3b814601b0233e42c2bc7040 = $('<div id="html_ba04dd1d3b814601b0233e42c2bc7040" style="width: 100.0%; height: 100.0%;">Emory University Libraries</div>')[0];
+                popup_506090db0360436b973b7002eef467d8.setContent(html_ba04dd1d3b814601b0233e42c2bc7040);
+            
+
+            circle_130e3104c4234c9ea150f5d9cf70ad73.bindPopup(popup_506090db0360436b973b7002eef467d8);
+
+            
+        
+    
+
+            var circle_9b3413fc83f84921a6e72cbe6713680a = L.circle(
+                [38.8993373,-77.0485308],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_0c1b2b16d5a746aa9b5e8f31a39bb301 = L.popup({maxWidth: '300'});
+
+            
+                var html_b39f9030d5014f49bfdff0d8f45375ca = $('<div id="html_b39f9030d5014f49bfdff0d8f45375ca" style="width: 100.0%; height: 100.0%;">George Washington University Library</div>')[0];
+                popup_0c1b2b16d5a746aa9b5e8f31a39bb301.setContent(html_b39f9030d5014f49bfdff0d8f45375ca);
+            
+
+            circle_9b3413fc83f84921a6e72cbe6713680a.bindPopup(popup_0c1b2b16d5a746aa9b5e8f31a39bb301);
+
+            
+        
+    
+
+            var circle_bd9cce164490463ca2241ac0ef1ccebe = L.circle(
+                [38.9079086,-77.0716829],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_fab2b6328afc474ab0e01179879e57c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_6167534f74ee477781a43c9070d3df02 = $('<div id="html_6167534f74ee477781a43c9070d3df02" style="width: 100.0%; height: 100.0%;">Georgetown University Library</div>')[0];
+                popup_fab2b6328afc474ab0e01179879e57c9.setContent(html_6167534f74ee477781a43c9070d3df02);
+            
+
+            circle_bd9cce164490463ca2241ac0ef1ccebe.bindPopup(popup_fab2b6328afc474ab0e01179879e57c9);
+
+            
+        
+    
+
+            var circle_6e10efdd25a14d37850db362617a3907 = L.circle(
+                [31.8718037,-95.2885714],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_b042fcc31b3c4ed89f04d01442321483 = L.popup({maxWidth: '300'});
+
+            
+                var html_a698f80c818949409241db672ec0b94b = $('<div id="html_a698f80c818949409241db672ec0b94b" style="width: 100.0%; height: 100.0%;">Harvard University</div>')[0];
+                popup_b042fcc31b3c4ed89f04d01442321483.setContent(html_a698f80c818949409241db672ec0b94b);
+            
+
+            circle_6e10efdd25a14d37850db362617a3907.bindPopup(popup_b042fcc31b3c4ed89f04d01442321483);
+
+            
+        
+    
+
+            var circle_924c474b358042908a48cbd4c7f0c40f = L.circle(
+                [38.9217778,-77.0197426],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_cfb02cbfb58e45cd81ced888f1ca3ba7 = L.popup({maxWidth: '300'});
+
+            
+                var html_2a6718c2240b4b1c939063a573fdf3ea = $('<div id="html_2a6718c2240b4b1c939063a573fdf3ea" style="width: 100.0%; height: 100.0%;">Howard University Libraries</div>')[0];
+                popup_cfb02cbfb58e45cd81ced888f1ca3ba7.setContent(html_2a6718c2240b4b1c939063a573fdf3ea);
+            
+
+            circle_924c474b358042908a48cbd4c7f0c40f.bindPopup(popup_cfb02cbfb58e45cd81ced888f1ca3ba7);
+
+            
+        
+    
+
+            var circle_61a207c391a74cf598f2767c405c77da = L.circle(
+                [39.3322127,-76.6008334],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_aff21a551c734fbdad5db75570c4fba1 = L.popup({maxWidth: '300'});
+
+            
+                var html_0dec2e82db404076a7d8ec3b147fad04 = $('<div id="html_0dec2e82db404076a7d8ec3b147fad04" style="width: 100.0%; height: 100.0%;">Johns Hopkins University Libraries</div>')[0];
+                popup_aff21a551c734fbdad5db75570c4fba1.setContent(html_0dec2e82db404076a7d8ec3b147fad04);
+            
+
+            circle_61a207c391a74cf598f2767c405c77da.bindPopup(popup_aff21a551c734fbdad5db75570c4fba1);
+
+            
+        
+    
+
+            var circle_7b2252b4ed7143d29bb026a1b3508467 = L.circle(
+                [42.3647559,-71.1032591],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_3a1a192bfbfc47aba2e78eebfa296ddb = L.popup({maxWidth: '300'});
+
+            
+                var html_9451ac366b1d48e6b23f3a983ece8236 = $('<div id="html_9451ac366b1d48e6b23f3a983ece8236" style="width: 100.0%; height: 100.0%;">Massachusetts Institute of Technology Libraries</div>')[0];
+                popup_3a1a192bfbfc47aba2e78eebfa296ddb.setContent(html_9451ac366b1d48e6b23f3a983ece8236);
+            
+
+            circle_7b2252b4ed7143d29bb026a1b3508467.bindPopup(popup_3a1a192bfbfc47aba2e78eebfa296ddb);
+
+            
+        
+    
+
+            var circle_ff64dab859a345ab9e44f2d60aff164b = L.circle(
+                [42.3476181,-71.1002881],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_9e4d685bc48c4378aead91a0a96f2dc2 = L.popup({maxWidth: '300'});
+
+            
+                var html_280c15134daa4e92b8cb3171a471909f = $('<div id="html_280c15134daa4e92b8cb3171a471909f" style="width: 100.0%; height: 100.0%;">Boston University Libraries</div>')[0];
+                popup_9e4d685bc48c4378aead91a0a96f2dc2.setContent(html_280c15134daa4e92b8cb3171a471909f);
+            
+
+            circle_ff64dab859a345ab9e44f2d60aff164b.bindPopup(popup_9e4d685bc48c4378aead91a0a96f2dc2);
+
+            
+        
+    
+
+            var circle_71da9565b33742e0b854319c5937f83b = L.circle(
+                [25.75,-80.26],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_57918b26569b48f9812c42de8f434970 = L.popup({maxWidth: '300'});
+
+            
+                var html_593aedb55a124cd9b657488f05316532 = $('<div id="html_593aedb55a124cd9b657488f05316532" style="width: 100.0%; height: 100.0%;">University of Miami Libraries</div>')[0];
+                popup_57918b26569b48f9812c42de8f434970.setContent(html_593aedb55a124cd9b657488f05316532);
+            
+
+            circle_71da9565b33742e0b854319c5937f83b.bindPopup(popup_57918b26569b48f9812c42de8f434970);
+
+            
+        
+    
+
+            var circle_2086e8eade8e4a4a8db3aa95a7bb1581 = L.circle(
+                [42.3178198,-71.1626756],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_45d91baff2d846b389f608c4f1c75222 = L.popup({maxWidth: '300'});
+
+            
+                var html_5b3d3b5baded4cd6bf3a1cf34345cc72 = $('<div id="html_5b3d3b5baded4cd6bf3a1cf34345cc72" style="width: 100.0%; height: 100.0%;">Boston College Libraries</div>')[0];
+                popup_45d91baff2d846b389f608c4f1c75222.setContent(html_5b3d3b5baded4cd6bf3a1cf34345cc72);
+            
+
+            circle_2086e8eade8e4a4a8db3aa95a7bb1581.bindPopup(popup_45d91baff2d846b389f608c4f1c75222);
+
+            
+        
+    
+
+            var circle_d5891488db014bf7a4fc8e1bd510f40f = L.circle(
+                [40.7250632,-73.9976946],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_593e1731aab647e099bc92bb8b4c65f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_90479e5e87d24b0cacd39777cfac010a = $('<div id="html_90479e5e87d24b0cacd39777cfac010a" style="width: 100.0%; height: 100.0%;">New York University Libraries</div>')[0];
+                popup_593e1731aab647e099bc92bb8b4c65f6.setContent(html_90479e5e87d24b0cacd39777cfac010a);
+            
+
+            circle_d5891488db014bf7a4fc8e1bd510f40f.bindPopup(popup_593e1731aab647e099bc92bb8b4c65f6);
+
+            
+        
+    
+
+            var circle_34ce62047cec4b6389ec01def593fea6 = L.circle(
+                [42.0541119,-87.6759889],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_2373ecdaf64b4898b6e5638156f16eb5 = L.popup({maxWidth: '300'});
+
+            
+                var html_60bbd20bc17c45ef9275402b07f5e6db = $('<div id="html_60bbd20bc17c45ef9275402b07f5e6db" style="width: 100.0%; height: 100.0%;">Northwestern University Library</div>')[0];
+                popup_2373ecdaf64b4898b6e5638156f16eb5.setContent(html_60bbd20bc17c45ef9275402b07f5e6db);
+            
+
+            circle_34ce62047cec4b6389ec01def593fea6.bindPopup(popup_2373ecdaf64b4898b6e5638156f16eb5);
+
+            
+        
+    
+
+            var circle_bf403c1d221843278df166abba92e0ed = L.circle(
+                [40.2524308,-111.6502622],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_6e965cd62db846c5ac2a0f87094091d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_c5705c4f8c824f4dbf3e59749bc720f3 = $('<div id="html_c5705c4f8c824f4dbf3e59749bc720f3" style="width: 100.0%; height: 100.0%;">Brigham Young University Library</div>')[0];
+                popup_6e965cd62db846c5ac2a0f87094091d8.setContent(html_c5705c4f8c824f4dbf3e59749bc720f3);
+            
+
+            circle_bf403c1d221843278df166abba92e0ed.bindPopup(popup_6e965cd62db846c5ac2a0f87094091d8);
+
+            
+        
+    
+
+            var circle_2c17f9d496e44b2992222ef77d654311 = L.circle(
+                [41.7043332,-86.2412543],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_1f78b3e2a98649aab4d58516e70ef739 = L.popup({maxWidth: '300'});
+
+            
+                var html_4876cc063dd1434ca84a7b5b4d629bac = $('<div id="html_4876cc063dd1434ca84a7b5b4d629bac" style="width: 100.0%; height: 100.0%;">Hesburgh Libraries, University of Notre Dame</div>')[0];
+                popup_1f78b3e2a98649aab4d58516e70ef739.setContent(html_4876cc063dd1434ca84a7b5b4d629bac);
+            
+
+            circle_2c17f9d496e44b2992222ef77d654311.bindPopup(popup_1f78b3e2a98649aab4d58516e70ef739);
+
+            
+        
+    
+
+            var circle_c586425ae869430db93126d7f303174c = L.circle(
+                [39.9583587,-75.1953934],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_8cccfddf4b6a403a91d6cfb6eab8750a = L.popup({maxWidth: '300'});
+
+            
+                var html_d290472f99254e00a9d9d1ba392108f0 = $('<div id="html_d290472f99254e00a9d9d1ba392108f0" style="width: 100.0%; height: 100.0%;">University of Pennsylvania Library</div>')[0];
+                popup_8cccfddf4b6a403a91d6cfb6eab8750a.setContent(html_d290472f99254e00a9d9d1ba392108f0);
+            
+
+            circle_c586425ae869430db93126d7f303174c.bindPopup(popup_8cccfddf4b6a403a91d6cfb6eab8750a);
+
+            
+        
+    
+
+            var circle_a87e82d4d41c482caf643c070ed89613 = L.circle(
+                [40.3467174,-74.6568772],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_3683dccfdcec4eb99de391b080601453 = L.popup({maxWidth: '300'});
+
+            
+                var html_5104e9d46bde4b4f887563e07413ddcc = $('<div id="html_5104e9d46bde4b4f887563e07413ddcc" style="width: 100.0%; height: 100.0%;">Princeton University Library</div>')[0];
+                popup_3683dccfdcec4eb99de391b080601453.setContent(html_5104e9d46bde4b4f887563e07413ddcc);
+            
+
+            circle_a87e82d4d41c482caf643c070ed89613.bindPopup(popup_3683dccfdcec4eb99de391b080601453);
+
+            
+        
+    
+
+            var circle_2ba3cdc06cd24d6ca54280a08ed388de = L.circle(
+                [29.7183467,-95.4306141],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_c7d40804adb94966a1ee27eb6058eb61 = L.popup({maxWidth: '300'});
+
+            
+                var html_3cdc2e73b61749da91d7122c0ebadde7 = $('<div id="html_3cdc2e73b61749da91d7122c0ebadde7" style="width: 100.0%; height: 100.0%;">Rice University Library</div>')[0];
+                popup_c7d40804adb94966a1ee27eb6058eb61.setContent(html_3cdc2e73b61749da91d7122c0ebadde7);
+            
+
+            circle_2ba3cdc06cd24d6ca54280a08ed388de.bindPopup(popup_c7d40804adb94966a1ee27eb6058eb61);
+
+            
+        
+    
+
+            var circle_553e8486772647b78906ef202e663bba = L.circle(
+                [43.1318593,-77.623931],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_1ed67426f8f546e7903e6ef0b6c77b65 = L.popup({maxWidth: '300'});
+
+            
+                var html_2255e82b1be748d9a542fe251f49a7f6 = $('<div id="html_2255e82b1be748d9a542fe251f49a7f6" style="width: 100.0%; height: 100.0%;">University of Rochester Libraries</div>')[0];
+                popup_1ed67426f8f546e7903e6ef0b6c77b65.setContent(html_2255e82b1be748d9a542fe251f49a7f6);
+            
+
+            circle_553e8486772647b78906ef202e663bba.bindPopup(popup_1ed67426f8f546e7903e6ef0b6c77b65);
+
+            
+        
+    
+
+            var circle_61e21ee1f3964f859f87592a4c7f6df5 = L.circle(
+                [34.0220127,-118.2892046],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_cb418d54c0ce47cba4c3d98b8c6c595c = L.popup({maxWidth: '300'});
+
+            
+                var html_32d0c1ad03d341f8ab0842158d819099 = $('<div id="html_32d0c1ad03d341f8ab0842158d819099" style="width: 100.0%; height: 100.0%;">University of Southern California Libraries</div>')[0];
+                popup_cb418d54c0ce47cba4c3d98b8c6c595c.setContent(html_32d0c1ad03d341f8ab0842158d819099);
+            
+
+            circle_61e21ee1f3964f859f87592a4c7f6df5.bindPopup(popup_cb418d54c0ce47cba4c3d98b8c6c595c);
+
+            
+        
+    
+
+            var circle_96a5340971634b9a9ad3296477fc0f2d = L.circle(
+                [41.8265437,-71.4013635],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_4f930a383b89429fb9e005a92467153b = L.popup({maxWidth: '300'});
+
+            
+                var html_73892ddf27ed44f38be5dab6943dc346 = $('<div id="html_73892ddf27ed44f38be5dab6943dc346" style="width: 100.0%; height: 100.0%;">Brown University Library</div>')[0];
+                popup_4f930a383b89429fb9e005a92467153b.setContent(html_73892ddf27ed44f38be5dab6943dc346);
+            
+
+            circle_96a5340971634b9a9ad3296477fc0f2d.bindPopup(popup_4f930a383b89429fb9e005a92467153b);
+
+            
+        
+    
+
+            var circle_80e359a89dc349c79aced2b5bac7545b = L.circle(
+                [43.0478261,-76.1432291],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_d663a08f526d4901861d08efc6c7d324 = L.popup({maxWidth: '300'});
+
+            
+                var html_0decbb15f8574084a9dc17f69fd17cd4 = $('<div id="html_0decbb15f8574084a9dc17f69fd17cd4" style="width: 100.0%; height: 100.0%;">Syracuse University Library</div>')[0];
+                popup_d663a08f526d4901861d08efc6c7d324.setContent(html_0decbb15f8574084a9dc17f69fd17cd4);
+            
+
+            circle_80e359a89dc349c79aced2b5bac7545b.bindPopup(popup_d663a08f526d4901861d08efc6c7d324);
+
+            
+        
+    
+
+            var circle_8a303f7b121f48d1a718eb5d1ce6a315 = L.circle(
+                [29.9450835,-90.1261013],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_12bed6fdbc5f4b049fc52acbab03cab7 = L.popup({maxWidth: '300'});
+
+            
+                var html_cda967d2bbd14a618b093afd37903e27 = $('<div id="html_cda967d2bbd14a618b093afd37903e27" style="width: 100.0%; height: 100.0%;">Tulane University Library</div>')[0];
+                popup_12bed6fdbc5f4b049fc52acbab03cab7.setContent(html_cda967d2bbd14a618b093afd37903e27);
+            
+
+            circle_8a303f7b121f48d1a718eb5d1ce6a315.bindPopup(popup_12bed6fdbc5f4b049fc52acbab03cab7);
+
+            
+        
+    
+
+            var circle_0fbfb5876663411b87d7b154af9105a1 = L.circle(
+                [36.1457192,-86.8066559],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_02487782488743048685ef0e0211ea0a = L.popup({maxWidth: '300'});
+
+            
+                var html_e9c1b3d00b3140728866ccf812479121 = $('<div id="html_e9c1b3d00b3140728866ccf812479121" style="width: 100.0%; height: 100.0%;">Vanderbilt University Library</div>')[0];
+                popup_02487782488743048685ef0e0211ea0a.setContent(html_e9c1b3d00b3140728866ccf812479121);
+            
+
+            circle_0fbfb5876663411b87d7b154af9105a1.bindPopup(popup_02487782488743048685ef0e0211ea0a);
+
+            
+        
+    
+
+            var circle_795e828439874ee2b04b28000e978f6c = L.circle(
+                [38.6682669,-90.3230807],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_2a2220d529c8416e8b3295f586705d80 = L.popup({maxWidth: '300'});
+
+            
+                var html_a1884b873d5543d2a4a582b447c47bbf = $('<div id="html_a1884b873d5543d2a4a582b447c47bbf" style="width: 100.0%; height: 100.0%;">Washington University in St. Louis Libraries</div>')[0];
+                popup_2a2220d529c8416e8b3295f586705d80.setContent(html_a1884b873d5543d2a4a582b447c47bbf);
+            
+
+            circle_795e828439874ee2b04b28000e978f6c.bindPopup(popup_2a2220d529c8416e8b3295f586705d80);
+
+            
+        
+    
+
+            var circle_7f287fb08fb8463b99706719a94aa815 = L.circle(
+                [41.3065186,-72.9310714],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_e7a71edbd85b4c879cb2e649245907b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_cffd163209894f9b85254cf16e45a14b = $('<div id="html_cffd163209894f9b85254cf16e45a14b" style="width: 100.0%; height: 100.0%;">Yale University Library</div>')[0];
+                popup_e7a71edbd85b4c879cb2e649245907b2.setContent(html_cffd163209894f9b85254cf16e45a14b);
+            
+
+            circle_7f287fb08fb8463b99706719a94aa815.bindPopup(popup_e7a71edbd85b4c879cb2e649245907b2);
+
+            
+        
+    
+
+            var circle_b666787787d54f64aef773bf240e5baf = L.circle(
+                [42.353068,-71.0765188],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_3691236d853441579f333925f1fd1b29 = L.popup({maxWidth: '300'});
+
+            
+                var html_46229ad267ed43a7ada58cb811836fa3 = $('<div id="html_46229ad267ed43a7ada58cb811836fa3" style="width: 100.0%; height: 100.0%;">Boston Public Library</div>')[0];
+                popup_3691236d853441579f333925f1fd1b29.setContent(html_46229ad267ed43a7ada58cb811836fa3);
+            
+
+            circle_b666787787d54f64aef773bf240e5baf.bindPopup(popup_3691236d853441579f333925f1fd1b29);
+
+            
+        
+    
+
+            var circle_25c9fe6d623940c08fc06bff2d658fd4 = L.circle(
+                [41.7805099,-87.603826],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_f530a67a166f43c6a2375094ea865879 = L.popup({maxWidth: '300'});
+
+            
+                var html_48533d0ac1784e59940f2ffd45ab2145 = $('<div id="html_48533d0ac1784e59940f2ffd45ab2145" style="width: 100.0%; height: 100.0%;">Center for Research Libraries</div>')[0];
+                popup_f530a67a166f43c6a2375094ea865879.setContent(html_48533d0ac1784e59940f2ffd45ab2145);
+            
+
+            circle_25c9fe6d623940c08fc06bff2d658fd4.bindPopup(popup_f530a67a166f43c6a2375094ea865879);
+
+            
+        
+    
+
+            var circle_c21395002be84dc0b681d83420619a63 = L.circle(
+                [38.8870502,-77.004986],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_77df8beda0ef4d6cb81fe8eac321c22c = L.popup({maxWidth: '300'});
+
+            
+                var html_2b09115711164819812daa79e7edc5ab = $('<div id="html_2b09115711164819812daa79e7edc5ab" style="width: 100.0%; height: 100.0%;">Library of Congress</div>')[0];
+                popup_77df8beda0ef4d6cb81fe8eac321c22c.setContent(html_2b09115711164819812daa79e7edc5ab);
+            
+
+            circle_c21395002be84dc0b681d83420619a63.bindPopup(popup_77df8beda0ef4d6cb81fe8eac321c22c);
+
+            
+        
+    
+
+            var circle_2d1e64800c1b4d7fa678793b3f59e93f = L.circle(
+                [39.0455425,-76.9066829],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_c0bfb405ca7f4dd4ae9b08fcd5357347 = L.popup({maxWidth: '300'});
+
+            
+                var html_87090525bd884475befb40720d17be63 = $('<div id="html_87090525bd884475befb40720d17be63" style="width: 100.0%; height: 100.0%;">National Agricultural Library</div>')[0];
+                popup_c0bfb405ca7f4dd4ae9b08fcd5357347.setContent(html_87090525bd884475befb40720d17be63);
+            
+
+            circle_2d1e64800c1b4d7fa678793b3f59e93f.bindPopup(popup_c0bfb405ca7f4dd4ae9b08fcd5357347);
+
+            
+        
+    
+
+            var circle_4293bd40b9694dedbc9ad0634a98cbd8 = L.circle(
+                [38.892289,-77.0229816],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_c8058cb17d0b4e91a914c8130d41e677 = L.popup({maxWidth: '300'});
+
+            
+                var html_15097bd4e4fa43c382bf286b00e2a665 = $('<div id="html_15097bd4e4fa43c382bf286b00e2a665" style="width: 100.0%; height: 100.0%;">National Archives and Records Administration (NARA)</div>')[0];
+                popup_c8058cb17d0b4e91a914c8130d41e677.setContent(html_15097bd4e4fa43c382bf286b00e2a665);
+            
+
+            circle_4293bd40b9694dedbc9ad0634a98cbd8.bindPopup(popup_c8058cb17d0b4e91a914c8130d41e677);
+
+            
+        
+    
+
+            var circle_de14cd72020f42e3bec3e871c38ab98b = L.circle(
+                [38.9969923,-77.1010516],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_632b505d7554482d9bbbb0a24b2166d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_c7b08a294ee7418eb9fbe5746981a053 = $('<div id="html_c7b08a294ee7418eb9fbe5746981a053" style="width: 100.0%; height: 100.0%;">National Library of Medicine</div>')[0];
+                popup_632b505d7554482d9bbbb0a24b2166d2.setContent(html_c7b08a294ee7418eb9fbe5746981a053);
+            
+
+            circle_de14cd72020f42e3bec3e871c38ab98b.bindPopup(popup_632b505d7554482d9bbbb0a24b2166d2);
+
+            
+        
+    
+
+            var circle_028dd0de0fc14a06a5ce8e144b6367cb = L.circle(
+                [40.755322,-73.9932872],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_0718f7b4819f49e48aa119df01a8994f = L.popup({maxWidth: '300'});
+
+            
+                var html_401f3e4479cf4bf3af0ad7755e7c241c = $('<div id="html_401f3e4479cf4bf3af0ad7755e7c241c" style="width: 100.0%; height: 100.0%;">New York Public Library</div>')[0];
+                popup_0718f7b4819f49e48aa119df01a8994f.setContent(html_401f3e4479cf4bf3af0ad7755e7c241c);
+            
+
+            circle_028dd0de0fc14a06a5ce8e144b6367cb.bindPopup(popup_0718f7b4819f49e48aa119df01a8994f);
+
+            
+        
+    
+
+            var circle_81b6511496ca4a11ad4df5f6d7dba8ca = L.circle(
+                [42.65,-73.76],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_a5607f816bfa4e028af6a01250262208 = L.popup({maxWidth: '300'});
+
+            
+                var html_3313249112704d5096dff85b17b5635f = $('<div id="html_3313249112704d5096dff85b17b5635f" style="width: 100.0%; height: 100.0%;">New York State Library</div>')[0];
+                popup_a5607f816bfa4e028af6a01250262208.setContent(html_3313249112704d5096dff85b17b5635f);
+            
+
+            circle_81b6511496ca4a11ad4df5f6d7dba8ca.bindPopup(popup_a5607f816bfa4e028af6a01250262208);
+
+            
+        
+    
+
+            var circle_a53f4c5114024b0396f851c6eb7e29b1 = L.circle(
+                [38.9,-77.04],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_c4b672e2739a4b4a8d48388847c3c1a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_2a17000877d04009a7f2b251ef853114 = $('<div id="html_2a17000877d04009a7f2b251ef853114" style="width: 100.0%; height: 100.0%;">Smithsonian Libraries</div>')[0];
+                popup_c4b672e2739a4b4a8d48388847c3c1a9.setContent(html_2a17000877d04009a7f2b251ef853114);
+            
+
+            circle_a53f4c5114024b0396f851c6eb7e29b1.bindPopup(popup_c4b672e2739a4b4a8d48388847c3c1a9);
+
+            
+        
+    
+
+            var circle_03427803f92f401bb9352bbbe7abdf95 = L.circle(
+                [53.525583,-113.5235063],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_517907cc623f4b2aba04cdb42a57d541 = L.popup({maxWidth: '300'});
+
+            
+                var html_a9be505e31184e7e973eca8685337e67 = $('<div id="html_a9be505e31184e7e973eca8685337e67" style="width: 100.0%; height: 100.0%;">University of Alberta Libraries</div>')[0];
+                popup_517907cc623f4b2aba04cdb42a57d541.setContent(html_a9be505e31184e7e973eca8685337e67);
+            
+
+            circle_03427803f92f401bb9352bbbe7abdf95.bindPopup(popup_517907cc623f4b2aba04cdb42a57d541);
+
+            
+        
+    
+
+            var circle_a060ea5296a64b89b9a512d763b924b3 = L.circle(
+                [43.5353897,-80.219583],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_a1388415f6bc4192b3a5111bea692bbd = L.popup({maxWidth: '300'});
+
+            
+                var html_97cf46ab008a4959818bba65e5b85050 = $('<div id="html_97cf46ab008a4959818bba65e5b85050" style="width: 100.0%; height: 100.0%;">University of Guelph Library</div>')[0];
+                popup_a1388415f6bc4192b3a5111bea692bbd.setContent(html_97cf46ab008a4959818bba65e5b85050);
+            
+
+            circle_a060ea5296a64b89b9a512d763b924b3.bindPopup(popup_a1388415f6bc4192b3a5111bea692bbd);
+
+            
+        
+    
+
+            var circle_c2bd7e57bda2494cb565a91e77e59423 = L.circle(
+                [45.5036135,-73.5765756],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_96371772eab442dca2d95fab0a240f49 = L.popup({maxWidth: '300'});
+
+            
+                var html_88bedfadac9049a9b34ae3ad47cb1928 = $('<div id="html_88bedfadac9049a9b34ae3ad47cb1928" style="width: 100.0%; height: 100.0%;">McGill University Library</div>')[0];
+                popup_96371772eab442dca2d95fab0a240f49.setContent(html_88bedfadac9049a9b34ae3ad47cb1928);
+            
+
+            circle_c2bd7e57bda2494cb565a91e77e59423.bindPopup(popup_96371772eab442dca2d95fab0a240f49);
+
+            
+        
+    
+
+            var circle_7115c0a726d74ea7b1ae3fc299ade0dd = L.circle(
+                [43.2589222,-79.9185706],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_4448cfea871c44c78c43980be9076ac7 = L.popup({maxWidth: '300'});
+
+            
+                var html_00a626f120894a77982a5f00357313e3 = $('<div id="html_00a626f120894a77982a5f00357313e3" style="width: 100.0%; height: 100.0%;">McMaster University Libraries</div>')[0];
+                popup_4448cfea871c44c78c43980be9076ac7.setContent(html_00a626f120894a77982a5f00357313e3);
+            
+
+            circle_7115c0a726d74ea7b1ae3fc299ade0dd.bindPopup(popup_4448cfea871c44c78c43980be9076ac7);
+
+            
+        
+    
+
+            var circle_9cfcbb1c51814b879afa4b2f7199576d = L.circle(
+                [49.8112193,-97.134843],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_9ccc02b3f4b748728ec3200ab7115d30 = L.popup({maxWidth: '300'});
+
+            
+                var html_d5743ad4376a481781c0f291c474bd58 = $('<div id="html_d5743ad4376a481781c0f291c474bd58" style="width: 100.0%; height: 100.0%;">University of Manitoba Libraries</div>')[0];
+                popup_9ccc02b3f4b748728ec3200ab7115d30.setContent(html_d5743ad4376a481781c0f291c474bd58);
+            
+
+            circle_9cfcbb1c51814b879afa4b2f7199576d.bindPopup(popup_9ccc02b3f4b748728ec3200ab7115d30);
+
+            
+        
+    
+
+            var circle_d027a556b8ea4f209d65396af57cd7d7 = L.circle(
+                [45.4227425,-75.6824915],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_4731fa801f804090b42587d4f755cae7 = L.popup({maxWidth: '300'});
+
+            
+                var html_2cd40392f78a4dfebd5db83888b1b8a6 = $('<div id="html_2cd40392f78a4dfebd5db83888b1b8a6" style="width: 100.0%; height: 100.0%;">University of Ottawa Library / Université d´Ottawa</div>')[0];
+                popup_4731fa801f804090b42587d4f755cae7.setContent(html_2cd40392f78a4dfebd5db83888b1b8a6);
+            
+
+            circle_d027a556b8ea4f209d65396af57cd7d7.bindPopup(popup_4731fa801f804090b42587d4f755cae7);
+
+            
+        
+    
+
+            var circle_e23449bb3a38430caec455db2e8d168a = L.circle(
+                [49.2684344,-123.2611099],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_e6eb85ea704246efb02ba092b322ad87 = L.popup({maxWidth: '300'});
+
+            
+                var html_d7fcd378ec214aa6bf8c7ff9bb21964c = $('<div id="html_d7fcd378ec214aa6bf8c7ff9bb21964c" style="width: 100.0%; height: 100.0%;">University of British Columbia Library</div>')[0];
+                popup_e6eb85ea704246efb02ba092b322ad87.setContent(html_d7fcd378ec214aa6bf8c7ff9bb21964c);
+            
+
+            circle_e23449bb3a38430caec455db2e8d168a.bindPopup(popup_e6eb85ea704246efb02ba092b322ad87);
+
+            
+        
+    
+
+            var circle_402101024f7347ea9edc70170a8af10f = L.circle(
+                [44.2272811,-76.4950699],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_6e8087e371414cb3930595074d07b66f = L.popup({maxWidth: '300'});
+
+            
+                var html_d26a1c4fbbb04433a46bfec14cb4dce6 = $('<div id="html_d26a1c4fbbb04433a46bfec14cb4dce6" style="width: 100.0%; height: 100.0%;">Queen&#39;s University Library</div>')[0];
+                popup_6e8087e371414cb3930595074d07b66f.setContent(html_d26a1c4fbbb04433a46bfec14cb4dce6);
+            
+
+            circle_402101024f7347ea9edc70170a8af10f.bindPopup(popup_6e8087e371414cb3930595074d07b66f);
+
+            
+        
+    
+
+            var circle_d3d9b859c835472b90f261b747f4fafe = L.circle(
+                [52.1310693,-106.637229],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_717618fa0e8d436d9978619cba4e4bf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_f29026e457df45a0aa5ce28c811c38b7 = $('<div id="html_f29026e457df45a0aa5ce28c811c38b7" style="width: 100.0%; height: 100.0%;">University of Saskatchewan Library</div>')[0];
+                popup_717618fa0e8d436d9978619cba4e4bf7.setContent(html_f29026e457df45a0aa5ce28c811c38b7);
+            
+
+            circle_d3d9b859c835472b90f261b747f4fafe.bindPopup(popup_717618fa0e8d436d9978619cba4e4bf7);
+
+            
+        
+    
+
+            var circle_9bd91c6cb2b748ad82aff05714057e13 = L.circle(
+                [51.0753004,-114.1259239],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_44abc0a07e5045338bfcb53c12acb2a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_30fe20b214eb43b087c3b3e814285315 = $('<div id="html_30fe20b214eb43b087c3b3e814285315" style="width: 100.0%; height: 100.0%;">University of Calgary - Libraries and Cultural Resources</div>')[0];
+                popup_44abc0a07e5045338bfcb53c12acb2a2.setContent(html_30fe20b214eb43b087c3b3e814285315);
+            
+
+            circle_9bd91c6cb2b748ad82aff05714057e13.bindPopup(popup_44abc0a07e5045338bfcb53c12acb2a2);
+
+            
+        
+    
+
+            var circle_4192b1b367c84aa989bafc0275c2efa1 = L.circle(
+                [43.6641453,-79.3996975],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_07bebf76835e415280a2a73817e4a326 = L.popup({maxWidth: '300'});
+
+            
+                var html_c46dba8aa3054894974090cd8c09e3cd = $('<div id="html_c46dba8aa3054894974090cd8c09e3cd" style="width: 100.0%; height: 100.0%;">University of Toronto Libraries</div>')[0];
+                popup_07bebf76835e415280a2a73817e4a326.setContent(html_c46dba8aa3054894974090cd8c09e3cd);
+            
+
+            circle_4192b1b367c84aa989bafc0275c2efa1.bindPopup(popup_07bebf76835e415280a2a73817e4a326);
+
+            
+        
+    
+
+            var circle_eb10f0432b7747e7bbb1fd8eb979cea6 = L.circle(
+                [43.4715646,-80.5431505],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_63d11a52008d4b9cb379b4f3e0752abb = L.popup({maxWidth: '300'});
+
+            
+                var html_3b4b662fac3a4a728b5ccd3ba6e3d060 = $('<div id="html_3b4b662fac3a4a728b5ccd3ba6e3d060" style="width: 100.0%; height: 100.0%;">University of Waterloo Library</div>')[0];
+                popup_63d11a52008d4b9cb379b4f3e0752abb.setContent(html_3b4b662fac3a4a728b5ccd3ba6e3d060);
+            
+
+            circle_eb10f0432b7747e7bbb1fd8eb979cea6.bindPopup(popup_63d11a52008d4b9cb379b4f3e0752abb);
+
+            
+        
+    
+
+            var circle_a5747b0972f042bdb7ca13997fe521a0 = L.circle(
+                [43.0085587,-81.2634983],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_f92a591d4e4449558bb4193ac92c73f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_4c51d720ceb64e68bb28f6b0f653ae67 = $('<div id="html_4c51d720ceb64e68bb28f6b0f653ae67" style="width: 100.0%; height: 100.0%;">Western University Libraries</div>')[0];
+                popup_f92a591d4e4449558bb4193ac92c73f9.setContent(html_4c51d720ceb64e68bb28f6b0f653ae67);
+            
+
+            circle_a5747b0972f042bdb7ca13997fe521a0.bindPopup(popup_f92a591d4e4449558bb4193ac92c73f9);
+
+            
+        
+    
+
+            var circle_6d2f543f08614377a1fe04046d9b5e36 = L.circle(
+                [43.7728399,-79.4949945],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_31e6d2d626f74f99aaf1e5f2882d255f = L.popup({maxWidth: '300'});
+
+            
+                var html_e5bfbf7f2dee4305b583f066b68e054d = $('<div id="html_e5bfbf7f2dee4305b583f066b68e054d" style="width: 100.0%; height: 100.0%;">York University Libraries</div>')[0];
+                popup_31e6d2d626f74f99aaf1e5f2882d255f.setContent(html_e5bfbf7f2dee4305b583f066b68e054d);
+            
+
+            circle_6d2f543f08614377a1fe04046d9b5e36.bindPopup(popup_31e6d2d626f74f99aaf1e5f2882d255f);
+
+            
+        
+    
+
+            var circle_bd72e3cfa1a141e3b447f07d71dd6b6c = L.circle(
+                [46.7790474,-71.2733835],
+                20,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.2
+                    }
+                )
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+            
+    
+            var popup_a58771af64524007a9ef3e7414de2714 = L.popup({maxWidth: '300'});
+
+            
+                var html_04634845f43d4363905d130dab77c866 = $('<div id="html_04634845f43d4363905d130dab77c866" style="width: 100.0%; height: 100.0%;">Université Laval</div>')[0];
+                popup_a58771af64524007a9ef3e7414de2714.setContent(html_04634845f43d4363905d130dab77c866);
+            
+
+            circle_bd72e3cfa1a141e3b447f07d71dd6b6c.bindPopup(popup_a58771af64524007a9ef3e7414de2714);
+
+            
+        
+    
+            var heat_map_19eb96688ce24cb390d6877be3f45bdb = L.heatLayer(
+                [[33.207198999999996, -87.548202500000002, 0], [38.547442799999999, -121.77653090000001, 10], [33.684587000000001, -117.83188, 20], [34.070264000000002, -118.44405619999999, 30], [33.972400700000001, -117.34843170000001, 40], [32.884355199999995, -117.23380659999999, 50], [34.413586799999997, -119.8496976, 60], [39.133145399999997, -84.509213000000003, 70], [40.010324700000005, -105.28897260000001, 80], [40.570290500000006, -105.09016250000001, 90], [41.819320300000001, -72.251183299999994, 100], [39.691198399999998, -75.758952400000013, 110], [29.613023900000002, -82.371937000000003, 120], [30.440785300000002, -84.288351900000009, 130], [33.954258000000003, -83.374932200000003, 140], [33.770001200000003, -84.381145799999999, 150], [32.233284099999999, -110.94880079999999, 160], [21.317549300000003, -157.81524909999999, 170], [29.726026600000001, -95.348164099999991, 180], [41.873369599999997, -87.650714000000008, 190], [40.105923299999994, -88.212031499999995, 200], [39.171426600000004, -86.518602200000004, 210], [41.659362999999999, -91.548709900000006, 220], [42.028866299999997, -93.648030700000007, 230], [33.418315899999996, -111.9311939, 240], [38.949949200000006, -95.265831800000001, 250], [41.153750000000002, -81.35127, 260], [38.019613799999995, -84.499448799999996, 270], [32.590956200000001, -85.492978500000007, 280], [30.41, -91.180000000000007, 290], [38.216926100000002, -85.762499200000008, 300], [38.990848700000001, -76.944141000000002, 310], [42.395655600000005, -72.521961700000006, 320], [42.3053253, -83.669416900000016, 330], [42.724305000000001, -84.479604699999996, 340], [44.974156100000002, -93.234200000000001, 350], [38.951673999999997, -92.332541000000006, 360], [40.818253000000006, -96.695225400000012, 370], [35.090000000000003, -106.62, 380], [35.972208100000003, -79.047555900000006, 390], [35.785054500000001, -78.681944900000005, 400], [39.322183899999999, -82.10606829999999, 410], [39.999062600000002, -83.017338599999988, 420], [35.187950700000002, -97.442191900000012, 430], [36.119899600000004, -97.088841500000001, 440], [44.0350489, -123.04735659999999, 450], [40.808407500000001, -77.8638835, 460], [40.4424402, -79.953194799999991, 470], [40.440177500000004, -86.926100799999986, 480], [40.486155200000006, -74.451849999999993, 490], [33.996305200000002, -81.027156999999988, 500], [37.727775100000002, -89.214838599999993, 510], [42.690773299999996, -73.827938099999997, 520], [42.871099999999998, -78.859319900000003, 530], [40.913224399999997, -73.126109099999994, 540], [39.979524400000003, -75.145781999999997, 550], [35.943355799999999, -83.938699099999994, 560], [30.280000000000001, -97.739999999999995, 570], [30.609999999999999, -96.340000000000003, 580], [33.588643900000001, -101.8820434, 590], [40.765220100000001, -111.84195359999998, 600], [38.034027700000003, -78.510016000000007, 610], [37.870151, -122.2594606, 620], [37.229999900000003, -80.409999999999997, 630], [47.650888200000004, -122.30840230000001, 640], [46.728720700000004, -117.1542743, 650], [42.3664506, -83.073719499999996, 660], [43.105433399999995, -89.426928700000005, 670], [41.509125700000006, -81.608987299999995, 680], [41.780509899999998, -87.603825999999998, 690], [40.8138912, -73.962432700000008, 700], [42.4467049, -76.483057900000006, 710], [43.701958300000001, -72.288904500000001, 720], [35.999226299999997, -78.947208900000007, 730], [33.798099499999999, -84.325936700000014, 740], [38.899337299999999, -77.048530799999995, 750], [38.907908599999999, -77.071682899999999, 760], [31.871803700000001, -95.288571400000009, 770], [38.921777800000001, -77.019742600000001, 780], [39.332212700000007, -76.600833399999999, 790], [42.364755899999999, -71.103259099999988, 800], [42.347618100000005, -71.1002881, 810], [25.75, -80.260000000000005, 820], [42.317819799999995, -71.1626756, 830], [40.725063200000001, -73.997694600000003, 840], [42.054111900000002, -87.675988900000007, 850], [40.252430799999999, -111.6502622, 860], [41.704333200000008, -86.241254299999994, 870], [39.958358700000005, -75.1953934, 880], [40.346717400000003, -74.656877199999997, 890], [29.718346700000001, -95.4306141, 900], [43.131859300000002, -77.623930999999999, 910], [34.022012700000005, -118.28920459999999, 920], [41.826543700000002, -71.401363500000002, 930], [43.047826100000002, -76.143229099999999, 940], [29.945083500000003, -90.126101299999988, 950], [36.145719200000002, -86.806655899999996, 960], [38.668266899999999, -90.323080700000006, 970], [41.306518599999997, -72.931071400000008, 980], [42.353068, -71.076518800000002, 990], [41.780509899999998, -87.603825999999998, 1000], [38.887050200000004, -77.004986000000002, 1010], [39.045542499999996, -76.906682900000007, 1020], [38.892288999999998, -77.022981599999994, 1030], [38.996992299999995, -77.101051599999991, 1040], [40.755322, -73.993287199999997, 1050], [42.649999999999999, -73.760000000000005, 1060], [38.899999999999999, -77.040000000000006, 1070], [53.525582999999997, -113.52350630000001, 1080], [43.535389700000003, -80.219583, 1090], [45.5036135, -73.576575599999998, 1100], [43.258922200000001, -79.918570599999995, 1110], [49.811219299999998, -97.134843000000004, 1120], [45.422742499999998, -75.682491499999998, 1130], [49.268434399999997, -123.26110990000002, 1140], [44.227281099999999, -76.495069900000004, 1150], [52.1310693, -106.637229, 1160], [51.075300399999996, -114.1259239, 1170], [43.664145300000001, -79.399697500000002, 1180], [43.471564600000001, -80.543150499999996, 1190], [43.008558700000009, -81.263498299999995, 1200], [43.772839900000001, -79.49499449999999, 1210], [46.779047399999996, -71.273383499999994, 1220]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 30,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_2f139da0894947649f8813e2ad9a7877);
+        
+    
+                
+
+                map_2f139da0894947649f8813e2ad9a7877.fitBounds(
+                    [[40.0350489, -157.8152491], [53.525583, -71.0765188]],
+                    {}
+                    );
+            
+</script>
