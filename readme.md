@@ -1,3 +1,7 @@
+## N.B. Text below being revised, new charts added, etc.
+Since writing this originally, the analysis has evolved somewhat, and this needs
+to be revised before being shared broadly.
+
 # HathiTrust Usage Analysis
 
 As part of some work to expand the [SimplyE
