@@ -15,7 +15,7 @@ But for a particularly interesting time period -- 1923-1963 -- there are some ot
 For this reason, libraries in general are very interested in materials published during that period; the [HathiTrust Digital Library](http://hathitrust.org/), as a library community partnership where dozens of institutions store digitized copies of more than 16 million works, is perhaps has the most to gain from careful review of works in this period -- if a work is reviewed and found to have no notice, for example, that work can be opened up for anyone to see online. HathiTrust has administered an amazing project known as the [Copyright Review Management System](https://www.hathitrust.org/copyright-review), which initially reviewed works published in the US between 1923 and 1963, and to date about 54.8% of the 366,202 volumes reviewed have been found to be in the public domain.[^wilkin_note] 
 
 
-<! --![Plot of Copyright Office records vs. HathiTrust records indicating US publication](cce_plot.png) -->
+<!-- ![Plot of Copyright Office records vs. HathiTrust records indicating US publication](cce_plot.png) -->
 
 <div>
     <a href="https://plot.ly/~hadro/71/?share_key=ozpf4TbQglQ5k7qRnsOHS0" target="_blank" title="Plot 71" style="display: block; text-align: center;"><img src="https://plot.ly/~hadro/71.png?share_key=ozpf4TbQglQ5k7qRnsOHS0" alt="Plot 71" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
