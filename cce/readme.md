@@ -22,7 +22,7 @@ For this reason, libraries in general are very interested in materials published
     <script data-plotly="hadro:71" sharekey-plotly="ozpf4TbQglQ5k7qRnsOHS0" src="https://plot.ly/embed.js" async></script>
 </div>
 
-So HathiTrust has one set of data, comprising some 16 million digitized works. For my purposes here, I limited the HathiTrust bibliographic corpus to include only volumes known to be published in the United States between 1923 and 1963.[^sql] That's the curve in the above figure, in blue. (See [a larger and interactive version of this figure on Github](https://hadro.github.io/hathi_analysis/cce/cce_count.html))
+So HathiTrust has one set of data, comprising some 16 million digitized works. For my purposes here, I limited the HathiTrust bibliographic corpus to include only volumes (books, not serials) known to be published in the United States between 1923 and 1963.[^sql] That's the curve in the above figure, in blue. (See [a larger and interactive version of this figure on Github](https://hadro.github.io/hathi_analysis/cce/cce_count.html))
 
 Meanwhile, the United States Copyright Office, as part of the Library of Congress, has served as the central clearinghouse for copyright designations and registrations, which were required until 1977. When registration of copyright was required, the Copyright Office compiled all of these submissions into an annual "Catalog of Copyright Entries," which is a treasure trove of pointers to original copyright registration filings.
 
@@ -58,4 +58,5 @@ So what have we learned?
 
 [^wilkin_note]: Meanwhile, only 15% were found to be conclusively in-copyright, while the remaining 35%, or roughly 105,000 works, remain in a kind of copyright limbo. For more on CRMS see John Wilkin's fascinating article, [How Large Is the "Public Domain"? A Comparative Analysis of Ringer's 1961 Copyright Renewal Study and HathiTrust CRMS Data](http://crl.acrl.org/index.php/crl/article/view/16582)
 
-[^sql]: The postgres sql query I used on my local version of [the Hathi files](https://www.hathitrust.org/hathifiles): `select publication_date, count(id), count(distinct(oclc_numbers)), count(distinct(hathitrust_record_number)) from hathifiles where publication_place like '__u' and publication_date > 1922 and publication_date < 1965 group by publication_date`
+[^sql]: The postgres sql query I used on my local version of [the Hathi files](https://www.hathitrust.org/hathifiles): 
+`select publication_date, count(distinct(id)), count(distinct(hathitrust_record_number)), count(distinct(oclc_numbers)) from hathifiles where publication_place like '__u' and publication_date > 1922 and publication_date < 1965 and bibliographic_format = 'BK' group by publication_date`
